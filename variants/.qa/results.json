@@ -1,0 +1,266 @@
+[
+  {
+    "folder": "01-slash",
+    "widths": [
+      {
+        "width": 360,
+        "pageWidth": 345,
+        "overflowing": []
+      },
+      {
+        "width": 390,
+        "pageWidth": 375,
+        "overflowing": []
+      },
+      {
+        "width": 768,
+        "pageWidth": 753,
+        "overflowing": []
+      },
+      {
+        "width": 1024,
+        "pageWidth": 1009,
+        "overflowing": []
+      },
+      {
+        "width": 1440,
+        "pageWidth": 1425,
+        "overflowing": []
+      },
+      {
+        "width": 1920,
+        "pageWidth": 1905,
+        "overflowing": []
+      }
+    ],
+    "errors": [],
+    "menuOpen": true,
+    "escape": true,
+    "linkCloses": true,
+    "reducedMotion": true,
+    "sections": [
+      "home",
+      "about",
+      "projects",
+      "achievements",
+      "team",
+      "join",
+      "contacts"
+    ],
+    "fonts": [
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Oswald",
+      "Oswald",
+      "Unbounded",
+      "Unbounded"
+    ]
+  },
+  {
+    "folder": "02-spotlight",
+    "widths": [
+      {
+        "width": 360,
+        "pageWidth": 345,
+        "overflowing": []
+      },
+      {
+        "width": 390,
+        "pageWidth": 375,
+        "overflowing": []
+      },
+      {
+        "width": 768,
+        "pageWidth": 753,
+        "overflowing": []
+      },
+      {
+        "width": 1024,
+        "pageWidth": 1009,
+        "overflowing": []
+      },
+      {
+        "width": 1440,
+        "pageWidth": 1425,
+        "overflowing": []
+      },
+      {
+        "width": 1920,
+        "pageWidth": 1905,
+        "overflowing": []
+      }
+    ],
+    "errors": [],
+    "menuOpen": true,
+    "escape": true,
+    "linkCloses": true,
+    "reducedMotion": true,
+    "sections": [
+      "home",
+      "about",
+      "projects",
+      "achievements",
+      "team",
+      "join",
+      "contacts"
+    ],
+    "fonts": [
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Oswald",
+      "Oswald",
+      "Unbounded",
+      "Unbounded"
+    ],
+    "pointerMedia": {
+      "fine": true,
+      "reduce": false,
+      "hero": 95
+    },
+    "pointerEffect": true
+  },
+  {
+    "folder": "03-kinetic",
+    "widths": [
+      {
+        "width": 360,
+        "pageWidth": 345,
+        "overflowing": []
+      },
+      {
+        "width": 390,
+        "pageWidth": 375,
+        "overflowing": []
+      },
+      {
+        "width": 768,
+        "pageWidth": 753,
+        "overflowing": []
+      },
+      {
+        "width": 1024,
+        "pageWidth": 1009,
+        "overflowing": []
+      },
+      {
+        "width": 1440,
+        "pageWidth": 1425,
+        "overflowing": []
+      },
+      {
+        "width": 1920,
+        "pageWidth": 1905,
+        "overflowing": []
+      }
+    ],
+    "errors": [],
+    "menuOpen": true,
+    "escape": true,
+    "linkCloses": true,
+    "reducedMotion": true,
+    "sections": [
+      "home",
+      "about",
+      "projects",
+      "achievements",
+      "team",
+      "join",
+      "contacts"
+    ],
+    "fonts": [
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Oswald",
+      "Oswald",
+      "Unbounded",
+      "Unbounded"
+    ],
+    "scrollEffect": true
+  },
+  {
+    "folder": "04-timeline",
+    "widths": [
+      {
+        "width": 360,
+        "pageWidth": 345,
+        "overflowing": []
+      },
+      {
+        "width": 390,
+        "pageWidth": 375,
+        "overflowing": []
+      },
+      {
+        "width": 768,
+        "pageWidth": 753,
+        "overflowing": []
+      },
+      {
+        "width": 1024,
+        "pageWidth": 1009,
+        "overflowing": []
+      },
+      {
+        "width": 1440,
+        "pageWidth": 1425,
+        "overflowing": []
+      },
+      {
+        "width": 1920,
+        "pageWidth": 1905,
+        "overflowing": []
+      }
+    ],
+    "errors": [],
+    "menuOpen": true,
+    "escape": true,
+    "linkCloses": true,
+    "reducedMotion": true,
+    "sections": [
+      "home",
+      "about",
+      "projects",
+      "achievements",
+      "team",
+      "join",
+      "contacts"
+    ],
+    "fonts": [
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Manrope",
+      "Oswald",
+      "Oswald",
+      "Unbounded",
+      "Unbounded"
+    ],
+    "scrollEffect": true
+  }
+]
