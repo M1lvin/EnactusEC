@@ -1,0 +1,359 @@
+[
+  {
+    "folder": "05-prism",
+    "widths": [
+      {
+        "width": 360,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 650,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 980,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1024,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1280,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1440,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1920,
+        "overflow": false,
+        "textOverflow": []
+      }
+    ],
+    "hoverOpens": true,
+    "focusOpens": true,
+    "arrowEnters": true,
+    "desktopEscape": true,
+    "mobileMenu": true,
+    "accordion": true,
+    "mobileSubEscape": true,
+    "mobileEscape": true,
+    "anchorCloses": true,
+    "signature": true,
+    "reduced": true,
+    "images": [
+      {
+        "src": "../assets/logo.png",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/photos/team-1.jpg",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/photos/team-2.jpg",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/logo.png",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "folder": "06-panorama",
+    "widths": [
+      {
+        "width": 360,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 650,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 980,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1024,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1280,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1440,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1920,
+        "overflow": false,
+        "textOverflow": []
+      }
+    ],
+    "hoverOpens": true,
+    "focusOpens": true,
+    "arrowEnters": true,
+    "desktopEscape": true,
+    "mobileMenu": true,
+    "accordion": true,
+    "mobileSubEscape": true,
+    "mobileEscape": true,
+    "anchorCloses": true,
+    "signature": true,
+    "reduced": true,
+    "images": [
+      {
+        "src": "../assets/logo.png",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/photos/team-2.jpg",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/photos/team-2.jpg",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/logo.png",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "folder": "07-stack",
+    "widths": [
+      {
+        "width": 360,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 650,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 980,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1024,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1280,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1440,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1920,
+        "overflow": false,
+        "textOverflow": []
+      }
+    ],
+    "hoverOpens": true,
+    "focusOpens": true,
+    "arrowEnters": true,
+    "desktopEscape": true,
+    "mobileMenu": true,
+    "accordion": true,
+    "mobileSubEscape": true,
+    "mobileEscape": true,
+    "anchorCloses": true,
+    "stickyState": {
+      "position": "sticky",
+      "top": 130,
+      "transform": "none"
+    },
+    "signature": true,
+    "reduced": true,
+    "images": [
+      {
+        "src": "../assets/logo.png",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/photos/team-1.jpg",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/photos/team-2.jpg",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/logo.png",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "folder": "10-route",
+    "widths": [
+      {
+        "width": 360,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 650,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 980,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1024,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1280,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1440,
+        "overflow": false,
+        "textOverflow": []
+      },
+      {
+        "width": 1920,
+        "overflow": false,
+        "textOverflow": []
+      }
+    ],
+    "hoverOpens": true,
+    "focusOpens": true,
+    "arrowEnters": true,
+    "desktopEscape": true,
+    "mobileMenu": true,
+    "accordion": true,
+    "mobileSubEscape": true,
+    "mobileEscape": true,
+    "anchorCloses": true,
+    "signature": true,
+    "reduced": true,
+    "images": [
+      {
+        "src": "../assets/logo.png",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/photos/team-1.jpg",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/photos/team-2.jpg",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      },
+      {
+        "src": "../assets/logo.png",
+        "loaded": true,
+        "alt": true,
+        "dimensions": true
+      }
+    ],
+    "errors": []
+  }
+]
