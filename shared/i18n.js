@@ -228,6 +228,12 @@
   dictionaries.en["submenuachievements"] = "Achievements submenu";
   dictionaries.en["submenuteam"] = "Team submenu";
   dictionaries.en["submenujoin"] = "Get involved submenu";
+  dictionaries.ru["overviewTitle"] = "Что такое Enactus EC?";
+  dictionaries.ru["overviewClub"] = "Команда Enactus Инженерного колледжа Light Academy, Бишкек.";
+  dictionaries.ru["overviewProjects"] = "EcoBrew и EasyGO";
+  dictionaries.en["overviewTitle"] = "What is Enactus EC?";
+  dictionaries.en["overviewClub"] = "The Enactus team of Light Academy Engineering College, Bishkek.";
+  dictionaries.en["overviewProjects"] = "EcoBrew and EasyGO";
   let language = 'ru';
   try { if (localStorage.getItem('enactus-language') === 'en') language = 'en'; } catch (_) {}
   function t(key) { return dictionaries[language][key] || dictionaries.ru[key] || key; }
