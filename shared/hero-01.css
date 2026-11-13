@@ -1,0 +1,120 @@
+/* Слои первого экрана 01; остальные варианты этот файл не подключают. */
+/* Корневая версия использует заглушку до получения фото от клуба. */
+.shared-page--01{--button-text:#d2cfc4;--button-hover:#8f6b00}
+.shared-page--01 .hero-01{display:block;isolation:isolate;position:relative;min-height:0;padding:0;overflow:hidden;background:var(--bg);color:var(--text)}
+.shared-page--01 .hero-01:before,.shared-page--01 .hero-01:after{display:none}
+.hero-01 .hero-photo-scene{height:calc(100svh - 96px);min-height:440px;position:relative;z-index:1}
+.hero-01 .hero-photo-motion{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,100% 88%,0 100%);pointer-events:none;will-change:transform}
+.hero-01 .hero-photo-reveal{position:absolute;inset:-4% 0;transform-origin:center}
+.shared-page--01 .hero-01 .hero-slides{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.shared-page--01 .hero-01 .hero-slide{background:var(--chrome);border:0}
+.shared-page--01 .hero-01 .hero-slide:before{display:none}
+.shared-page--01 .hero-01 .hero-slide img{width:100%;height:100%;object-fit:cover;animation:none;filter:none}
+.shared-page--01 .hero-01 img[data-i18n-alt=groupPhotoAlt]{position:absolute;left:0;top:-58%;height:220%}
+.shared-page--01 .hero-01 img[data-i18n-alt=membersPhotoAlt]{position:absolute;left:0;top:-105%;height:250%}
+.shared-page--01 .hero-01 .hero-overlay{position:absolute;inset:0;width:100%;height:100%;z-index:1;background:linear-gradient(0deg,#181a1d66,transparent 55%);pointer-events:none}
+.hero-01 .hero-wedge{position:absolute;pointer-events:none;will-change:transform}
+.hero-01 .wedge-surface{position:absolute;inset:0;pointer-events:none}
+.hero-01 .wedge-left{left:0;top:69%;width:64%;height:29%;z-index:4}
+.hero-01 .wedge-left .wedge-surface{background:var(--button);clip-path:polygon(0 0,100% 84%,17% 100%,0 62%)}
+.hero-01 .wedge-olive{left:0;top:84%;width:67%;height:25%;z-index:3}
+.hero-01 .wedge-olive .wedge-surface{background:var(--surface);clip-path:polygon(0 0,100% 100%,0 100%)}
+.hero-01 .wedge-right{right:0;top:87%;width:51%;height:22%;z-index:2}
+.hero-01 .wedge-right .wedge-surface{background:var(--button);clip-path:polygon(100% 0,100% 100%,0 100%)}
+.hero-01 .hero-arrow{position:absolute;top:51%;z-index:6;width:46px;height:46px;border:0;border-radius:50%;background:var(--bg);color:var(--text);font:400 29px/1 Arial,sans-serif;cursor:pointer}
+.hero-01 .hero-prev{left:24px}.hero-01 .hero-next{right:24px}
+.hero-01 .hero-arrow:hover{transform:translateY(-2px)}
+.shared-page--01 .hero-01 .hero-main{position:relative;z-index:5;width:100%;margin:0;padding:38px 6% 16px;border:0;clip-path:none;background:var(--bg);text-align:center}
+.shared-page--01 .hero-01 .hero-main:before{display:none}
+.shared-page--01 .hero-01 h1{font-size:clamp(2.5rem,7vw,6rem);margin:0 0 20px;white-space:nowrap}
+.hero-01 .hero-mask>span{animation:none}
+.shared-page--01 .hero-01 .hero-subtitle{max-width:1000px;font-weight:400;color:var(--text);animation:none}
+.hero-01 .hero-actions{animation:none;margin-top:26px}
+.shared-page--01 .hero-01 .hero-action{background:var(--button);color:var(--text);font-size:19px;font-weight:400;border-color:var(--button);transition:transform .2s}
+.shared-page--01 .hero-01 .hero-action:hover{background:var(--button);transform:translateY(-2px)}
+.hero-01 .hero-action [aria-hidden]{display:inline-block;transition:transform .2s}
+.hero-01 .hero-action{position:relative;isolation:isolate}
+.hero-01 .hero-action:before{content:'';position:absolute;inset:0;border-radius:inherit;background:var(--bg);opacity:.3;z-index:-1;pointer-events:none}
+.hero-01 .hero-action:hover [aria-hidden]{transform:translateX(4px)}
+.shared-page--01 .hero-01 .hero-controls{position:relative;z-index:5;margin:0 auto;padding:4px 20px 28px;gap:14px;background:var(--bg)}
+.shared-page--01 .hero-01 .hero-dots button:before{background:transparent;border-color:var(--text)}
+.shared-page--01 .hero-01 .hero-dots button[aria-pressed=true]:before{background:var(--accent);border-color:var(--accent)}
+.shared-page--01 .hero-01 .hero-pause{color:var(--text);border-color:var(--muted)}
+.shared-page--01 .hero-01 .hero-photo-todo{z-index:5;top:20px;left:24px;right:auto;transform:none;padding:0;border:0;background:var(--bg);font-size:11px;color:var(--text)}
+.shared-page--01 .hero-followup{background:var(--surface);padding:45px 0}
+.shared-page--01 .hero-followup .hero-bottom{margin:0 auto;padding:0;width:88%;border:0;gap:70px}
+.shared-page--01 .hero-followup h2{font-size:17px}
+.shared-page--01 .hero-followup p,.shared-page--01 .hero-followup .hero-phrase,.shared-page--01 .hero-followup small{color:var(--text)}
+.hero-01 .photo-missing:after{content:'';position:absolute;inset:-35%;background:linear-gradient(135deg,var(--chrome),var(--surface),var(--button),var(--chrome));animation:hero-01-drift 30s ease-in-out infinite alternate;pointer-events:none}
+.hero-intro-pending .hero-01 .hero-photo-reveal{opacity:0;transform:scale(1.08)}
+.hero-intro-pending .hero-01 .wedge-left .wedge-surface{transform:translateX(-100%)}
+.hero-intro-pending .hero-01 .wedge-olive .wedge-surface{transform:translateY(100%)}
+.hero-intro-pending .hero-01 .wedge-right .wedge-surface{transform:translateX(100%)}
+.hero-intro-pending .hero-01 .hero-mask>span,.hero-intro-pending .hero-01 .hero-subtitle,.hero-intro-pending .hero-01 .hero-actions{opacity:0}
+.hero-01.intro-playing .wedge-left .wedge-surface{animation:hero-01-enter-left .7s cubic-bezier(.22,1,.36,1) both}
+.hero-01.intro-playing .wedge-olive .wedge-surface{animation:hero-01-enter-up .7s .15s cubic-bezier(.22,1,.36,1) both}
+.hero-01.intro-playing .wedge-right .wedge-surface{animation:hero-01-enter-right .7s .3s cubic-bezier(.22,1,.36,1) both}
+.hero-01.intro-playing .hero-photo-reveal{animation:hero-01-photo .8s .5s cubic-bezier(.22,1,.36,1) both}
+.hero-01.intro-playing .hero-mask>span{animation:hero-01-title .5s .9s cubic-bezier(.22,1,.36,1) both}
+.hero-01.intro-playing .hero-mask:nth-child(2)>span{animation-delay:.95s}
+.hero-01.intro-playing .hero-subtitle{animation:hero-01-copy .5s 1s cubic-bezier(.22,1,.36,1) both}
+.hero-01.intro-playing .hero-actions{animation:hero-01-copy .5s 1.1s cubic-bezier(.22,1,.36,1) both}
+@keyframes hero-01-enter-left{from{transform:translateX(-100%)}to{transform:translateX(0)}}
+@keyframes hero-01-enter-right{from{transform:translateX(100%)}to{transform:translateX(0)}}
+@keyframes hero-01-enter-up{from{transform:translateY(100%)}to{transform:translateY(0)}}
+@keyframes hero-01-photo{from{opacity:0;transform:scale(1.08)}to{opacity:1;transform:scale(1)}}
+@keyframes hero-01-title{from{opacity:0;transform:translateY(105%)}to{opacity:1;transform:translateY(0)}}
+@keyframes hero-01-copy{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes hero-01-drift{from{transform:translate(-5%,-4%)}to{transform:translate(5%,4%)}}
+@media(max-width:650px){.hero-01 .hero-photo-scene{height:calc(100svh - 74px);min-height:440px}.hero-01 .hero-prev{left:14px}.hero-01 .hero-next{right:14px}.hero-01 .hero-arrow{width:40px;height:40px}.hero-01 .wedge-left{top:73%;width:82%;height:24%}.hero-01 .wedge-olive{top:88%;width:80%;height:22%}.hero-01 .wedge-right{top:89%;width:60%;height:19%}.shared-page--01 .hero-01 .hero-main{margin:0;padding:34px 20px 18px}.shared-page--01 .hero-01 h1{font-size:clamp(2.5rem,7vw,6rem)}.shared-page--01 .hero-followup{padding:32px 0}.shared-page--01 .hero-followup .hero-bottom{width:calc(100% - 40px);gap:26px}.shared-page--01 .hero-01 .hero-controls{width:100%;padding-bottom:24px}.shared-page--01 .hero-01 .hero-photo-todo{top:15px;left:15px}}
+@media(prefers-reduced-motion:reduce){.hero-01 *,.hero-01 *:before,.hero-01 *:after{animation:none!important;transition:none!important}.hero-01 .hero-photo-reveal,.hero-01 .wedge-surface,.hero-01 .hero-mask>span,.hero-01 .hero-subtitle,.hero-01 .hero-actions{opacity:1!important;transform:none!important}.hero-01 .hero-wedge,.hero-01 .hero-photo-motion{transform:none!important}.hero-01 .hero-action:hover,.hero-01 .hero-action:hover [aria-hidden]{transform:none}}
+
+/* Компактная шапка, раскрываемые разделы и новая широкая фотография. */
+.shared-page--01 [hidden]{display:none!important}
+.shared-page--01 header{min-height:76px;padding:7px 4%;gap:22px;z-index:40;border-bottom:1px solid #9aa0a62b}
+.shared-page--01 header .brand img{width:122px;height:60px}
+.shared-page--01 header nav{gap:16px;align-items:center}
+.shared-page--01 .nav-expand{position:static;min-width:0}
+.shared-page--01 .nav-item{display:flex;align-items:center;gap:4px;padding-right:14px;border-right:1px solid #9aa0a640}
+.shared-page--01 .nav-expand:last-child .nav-item{padding-right:0;border-right:0}
+.shared-page--01 .nav-primary{display:block;padding:10px 0;border:0;white-space:nowrap;font:600 16px/1.4 Manrope,Arial,sans-serif;color:#e4e0d4;text-decoration:none}
+.shared-page--01 .nav-primary:hover,.shared-page--01 .expanded .nav-primary{color:var(--accent);text-decoration:none}
+.shared-page--01 .nav-disclosure{width:28px;height:38px;padding:7px;border:0;background:transparent;color:var(--accent);cursor:pointer;display:grid;place-items:center;border-radius:5px}
+.shared-page--01 .nav-disclosure:hover{background:#181a1d40}
+.shared-page--01 .nav-disclosure svg{fill:none;stroke:currentColor;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+.shared-page--01 .nav-disclosure[aria-expanded=true] svg{transform:rotate(180deg)}
+.shared-page--01 .nav-panel{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-top:1px solid #9aa0a626;border-bottom:1px solid #9aa0a633;box-shadow:0 18px 30px #181a1d66;animation:nav-01-in .22s cubic-bezier(.22,1,.36,1) both}
+.shared-page--01 .nav-panel-inner{display:grid;grid-template-columns:.9fr 1.4fr;gap:80px;align-items:center;width:min(1180px,88%);margin:auto;padding:36px 0 40px}
+.shared-page--01 .nav-panel h2{font:700 19px/1.3 Manrope,Arial,sans-serif;letter-spacing:0;color:var(--text);padding-bottom:13px;margin:0 0 11px;border-bottom:2px solid var(--accent)}
+.shared-page--01 .nav-panel-links a{display:flex;align-items:center;justify-content:space-between;gap:20px;font:400 16px/1.5 Manrope,Arial,sans-serif;color:var(--text);padding:10px 0;border:0;text-decoration:none}
+.shared-page--01 .nav-panel-links a:hover{color:var(--accent)}
+.shared-page--01 .nav-panel-links a>[aria-hidden]{color:var(--accent)}
+.shared-page--01 .nav-panel p{font:400 13px/1.75 Manrope,Arial,sans-serif;color:var(--muted);margin:18px 0 0;max-width:460px}
+.shared-page--01 .nav-panel-image{margin:0;height:235px;overflow:hidden;border-radius:12px;background:var(--chrome)}
+.shared-page--01 .nav-panel-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.shared-page--01 .language-switch{flex-shrink:0;margin-left:0}
+.shared-page--01 .language-switch button{font-size:13px;font-weight:600;color:#e4e0d4;min-width:32px}
+.hero-01 .hero-photo-scene{height:min(68vw,calc(100svh - 76px));min-height:440px}
+.shared-page--01 .hero-01 img[data-i18n-alt=groupPhotoAlt]{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%}
+.hero-01 .hero-photo-reveal{inset:0}
+.hero-01 .wedge-left{top:72%;width:72%;height:29%}
+.hero-01 .wedge-olive{top:87%;width:78%;height:25%}
+.hero-01 .wedge-right{top:86%;width:62%;height:25%}
+.hero-01 .wedge-left .wedge-surface:after,.hero-01 .wedge-right .wedge-surface:after{content:'';position:absolute;inset:0;background:var(--accent);opacity:.08;pointer-events:none}
+.shared-page--01 .hero-followup .hero-quote-panel{position:relative}
+.shared-page--01 .hero-followup .hero-pause{float:right;margin:0 0 10px 15px;font:400 11px/1.4 Manrope,Arial,sans-serif;background:transparent;border:1px solid #9aa0a680;color:var(--text);border-radius:5px;padding:6px 9px}
+.shared-page--01 .hero-followup .hero-phrases{clear:both}
+.shared-page--01 .hero-01 .hero-main{padding-top:35px;padding-bottom:26px}
+.shared-page--01 .hero-01 .hero-action{padding:14px 26px}
+@keyframes nav-01-in{from{opacity:0;transform:translateY(-7px)}to{opacity:1;transform:translateY(0)}}
+@media(min-width:1500px){.shared-page--01 header{padding-inline:7%}.shared-page--01 header nav{gap:20px}.shared-page--01 .nav-primary{font-size:17px}}
+@media(max-width:1250px) and (min-width:1101px){.shared-page--01 header{padding-inline:25px;gap:14px}.shared-page--01 header nav{gap:10px}.shared-page--01 .nav-item{padding-right:10px}.shared-page--01 .nav-primary{font-size:15px}.shared-page--01 .nav-disclosure{width:23px}}
+@media(max-width:1100px){.shared-page--01 header{gap:12px}.shared-page--01 .language-switch{margin-left:auto}.shared-page--01 header nav{align-items:stretch;gap:0;max-height:calc(100svh - 76px);overflow:auto;padding-block:10px}.shared-page--01 .nav-item{justify-content:space-between;border-right:0;border-bottom:1px solid #9aa0a633;padding-right:0}.shared-page--01 .nav-primary{padding:15px 0;font-size:16px;flex:1}.shared-page--01 .nav-disclosure{width:45px;height:46px}.shared-page--01 .nav-panel{position:static;box-shadow:none;border-top:0;border-bottom:1px solid #9aa0a633;border-radius:6px}.shared-page--01 .nav-panel-inner{grid-template-columns:1fr;gap:0;width:100%;padding:17px}.shared-page--01 .nav-panel-image{display:none}.shared-page--01 .nav-panel p{display:none}.shared-page--01 .nav-panel h2{font-size:14px}.shared-page--01 .nav-panel-links a{font-size:14px;padding:12px 0}}
+@media(max-width:650px){.shared-page--01 header{min-height:68px;padding:5px 20px}.shared-page--01 header .brand img{width:105px;height:56px}.shared-page--01 header nav{max-height:calc(100svh - 68px)}.hero-01 .hero-photo-scene{height:clamp(255px,66.64vw,435px);min-height:0}.hero-01 .wedge-left{top:77%;width:84%;height:25%}.hero-01 .wedge-olive{top:90%;width:86%;height:23%}.hero-01 .wedge-right{top:88%;width:68%;height:24%}.shared-page--01 .hero-01 .hero-main{padding:30px 20px}.shared-page--01 .hero-01 h1{margin-bottom:16px}.shared-page--01 .hero-01 .hero-subtitle{font-size:17px}.shared-page--01 .hero-01 .hero-action{font-size:17px;padding:13px 22px}.shared-page--01 .hero-followup{padding:28px 0}.shared-page--01 .hero-followup .hero-pause{margin-top:0}}
+
+/* Вместо изображений — явно обозначенные места для материалов команды. */
+.shared-page--01 .hero-01 .hero-photo-todo{top:42%;left:50%;right:auto;transform:translate(-50%,-50%);padding:16px 24px;border:1px solid var(--muted);border-radius:8px;font:600 clamp(16px,1.7vw,22px)/1.5 Manrope,Arial,sans-serif;color:var(--text);background:var(--bg);white-space:nowrap}
+.shared-page--01 .nav-panel-image{display:grid;place-items:center;position:relative;background:linear-gradient(125deg,var(--chrome),var(--surface));border:1px dashed var(--muted)}
+.shared-page--01 .nav-photo-placeholder{padding:20px;font:400 16px/1.5 Manrope,Arial,sans-serif;color:var(--text);text-align:center}
+@media(max-width:1100px){.shared-page--01 .nav-panel-image{display:none}}
+@media(max-width:650px){.shared-page--01 .hero-01 .hero-photo-todo{padding:12px 18px;font-size:16px}}
