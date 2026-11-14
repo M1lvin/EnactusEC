@@ -3,6 +3,10 @@
   'use strict';
   const dictionaries = {
   "ru": {
+    "titleJoin": "Enactus EC — Как присоединиться",
+    "titleTeam": "Enactus EC — Команда",
+    "titleAchievements": "Enactus EC — Достижения",
+    "titleProjects": "Enactus EC — Проекты",
     "titleAbout": "Enactus EC — О нас",
     "fanClubHeading": "Фан-клуб сборной",
     "fanClubText": "Enactus EC объединяется, чтобы поддерживать национальную сборную Кыргызстана.",
@@ -103,7 +107,11 @@
     "text93": "Все варианты дизайна ↗"
   },
   "en": {
-    "titleAbout": "Enactus EC — О нас",
+    "titleJoin": "Enactus EC — How to join",
+    "titleTeam": "Enactus EC — Team",
+    "titleAchievements": "Enactus EC — Achievements",
+    "titleProjects": "Enactus EC — Projects",
+    "titleAbout": "Enactus EC — About us",
     // Перевод фан-клуба сборной требует проверки клубом.
     "fanClubHeading": "National team fan club",
     "fanClubText": "Enactus EC comes together to support Kyrgyzstan’s national team.",
