@@ -147,3 +147,7 @@
 @media(max-width:1100px){.overview-grid{gap:40px;grid-template-columns:1fr 1fr}.shared-page--01 .hero-followup.overview{padding-top:70px}.overview-card{padding:22px}.overview-photo,.overview-photo-surface{min-height:580px}}
 @media(max-width:800px){.overview-grid{grid-template-columns:1fr;gap:32px}.overview-photo,.overview-photo-surface{min-height:420px}.overview-photo{aspect-ratio:4/3}.overview-quotes{margin-top:45px}}
 @media(max-width:650px){.shared-page--01 .hero-followup.overview{padding:45px 0 25px;scroll-margin-top:68px}.overview-grid,.overview-quotes{width:calc(100% - 40px)}.shared-page--01 .overview-copy>h2{font-size:34px;margin-bottom:18px}.shared-page--01 .overview-intro{font-size:16px}.overview-cards{gap:14px;margin-top:25px}.overview-card{padding:21px}.shared-page--01 .overview-card h3{font-size:28px}.shared-page--01 .overview-card p{font-size:14px}.overview-photo,.overview-photo-surface{min-height:340px}.overview-photo:before{inset:8px -7px -7px 8px}.overview-quotes{margin-top:40px}.shared-page--01 .overview-quotes .hero-phrase{font-size:23px}}
+
+/* Header join link: no disclosure or submenu. */
+.shared-page--01 header nav .nav-join-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 18px;background:var(--button);color:var(--button-text);border:0;border-radius:6px;text-decoration:none;flex:none}
+.shared-page--01 header nav .nav-join-button:hover{background:var(--button-hover);color:var(--button-text)}
