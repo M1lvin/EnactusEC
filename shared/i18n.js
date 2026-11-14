@@ -3,6 +3,7 @@
   'use strict';
   const dictionaries = {
   "ru": {
+    "titleAbout": "Enactus EC — О нас",
     "fanClubHeading": "Фан-клуб сборной",
     "fanClubText": "Enactus EC объединяется, чтобы поддерживать национальную сборную Кыргызстана.",
     "fanClubMotto": "Кыргызстан, алга!",
@@ -102,6 +103,7 @@
     "text93": "Все варианты дизайна ↗"
   },
   "en": {
+    "titleAbout": "Enactus EC — О нас",
     // Перевод фан-клуба сборной требует проверки клубом.
     "fanClubHeading": "National team fan club",
     "fanClubText": "Enactus EC comes together to support Kyrgyzstan’s national team.",
