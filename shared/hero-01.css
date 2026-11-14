@@ -158,6 +158,3 @@
 
 /* Keep navigation and language controls together at the grid right edge. */
 @media(min-width:1101px){.shared-page--01 header{justify-content:flex-start}.shared-page--01 header nav{margin-left:auto}}
-
-/* Desktop spacing is measured between the complete menu controls. */
-@media(min-width:1101px){.shared-page--01 header{column-gap:40px}.shared-page--01 header nav{gap:28px}.shared-page--01 .nav-item{padding-right:0}.shared-page--01 header nav .nav-join-button{margin-left:12px}}
