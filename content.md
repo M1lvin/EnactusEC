@@ -49,6 +49,13 @@
 ## Фан-клуб сборной (необязательный блок)
 - Enactus EC объединяется, чтобы поддерживать национальную сборную Кыргызстана.
 - Девиз: «Кыргызстан, алга!»
+
+### Английский вариант фан-клуба сборной
+Перевод, требует проверки клубом.
+- fanClubHeading: National team fan club
+- fanClubText: Enactus EC comes together to support Kyrgyzstan’s national team.
+- fanClubMotto: Kyrgyzstan, onward!
+
 ## Фразы для слайдера
 - Вместе мы можем больше
 - Идеи превращаются в действия, а действия в результат
