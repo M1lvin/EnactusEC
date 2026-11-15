@@ -3,6 +3,11 @@
   'use strict';
   const dictionaries = {
   "ru": {
+    "footerLegalLine": "© 2026 Enactus EC · ОсОО «Инженерный Колледж Лайт Академия» · ул. Сухэ-Батора 23, Бишкек · +996 226 14 22 22",
+    "footerIconInstagram": "Instagram клуба Enactus EC",
+    "footerIconWhatsApp": "WhatsApp колледжа",
+    "footerEmailTodo": "Почта клуба: TODO",
+
     "footerClubName": "Enactus EC",
     "footerAffiliation": "Инженерный колледж Лайт Академия, Бишкек",
     "footerSections": "Разделы",
@@ -10,8 +15,8 @@
 
     "footerAddress": "Адрес клуба: ул. Сухэ-Батора, 23, 6-й микрорайон, Октябрьский район, Бишкек, 720073",
     "footerLegal": "Юридическое лицо: ОсОО «Инженерный Колледж Лайт Академия» (проверить у колледжа)",
-    "footerPhone": "Телефон колледжа: +996 226-14-22-22",
-    "footerSite": "Сайт колледжа: college.edu.kg",
+    "footerPhone": "+996 226-14-22-22",
+    "footerSite": "college.edu.kg",
     "footerInstagramClub": "Instagram клуба: https://www.instagram.com/enactus_ec/ (проверить ссылку)",
     "footerCollege": "Инженерный колледж Лайт Академия",
     "footerTodo": "Почта клуба: TODO. Юридическая строка и копирайт: TODO.",
@@ -119,6 +124,11 @@
     "text93": "Все варианты дизайна ↗"
   },
   "en": {
+    "footerLegalLine": "© 2026 Enactus EC · ОсОО «Инженерный Колледж Лайт Академия» · 23 Sukhe-Batora St, Bishkek · +996 226 14 22 22",
+    "footerIconInstagram": "Enactus EC club Instagram",
+    "footerIconWhatsApp": "College WhatsApp",
+    "footerEmailTodo": "Club email: TODO",
+
     "footerClubName": "Enactus EC",
     "footerAffiliation": "Light Academy Engineering College, Bishkek",
     "footerSections": "Sections",
@@ -127,8 +137,8 @@
     // Подписи footer*: перевод, требует проверки клубом. Юридическое наименование сохранено из источника.
     "footerAddress": "Club address: 23 Sukhe-Batora Street, 6th Microdistrict, Oktyabrsky District, Bishkek, 720073",
     "footerLegal": "Legal entity: ОсОО «Инженерный Колледж Лайт Академия» (confirm with the college)",
-    "footerPhone": "College phone: +996 226-14-22-22",
-    "footerSite": "College website: college.edu.kg",
+    "footerPhone": "+996 226-14-22-22",
+    "footerSite": "college.edu.kg",
     "footerInstagramClub": "Club Instagram: https://www.instagram.com/enactus_ec/ (verify the link)",
     "footerCollege": "Light Academy Engineering College",
     "footerTodo": "Club email: TODO. Legal notice and copyright: TODO.",
@@ -281,7 +291,18 @@
   function t(key) { return dictionaries[language][key] || dictionaries.ru[key] || key; }
   function apply() {
     document.documentElement.lang = language;
-    document.querySelectorAll('[data-i18n]').forEach(element => { element.textContent = t(element.dataset.i18n); });
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const value = t(element.dataset.i18n);
+      element.textContent = value;
+      if (element.dataset.i18n === 'footerLegalLine') {
+        element.replaceChildren(...value.split(' · ').map((part, index) => {
+          const span = document.createElement('span');
+          span.className = 'footer-legal-part';
+          span.textContent = (index ? ' · ' : '') + part;
+          return span;
+        }));
+      }
+    });
     [['data-i18n-alt','alt'], ['data-i18n-aria','aria-label'], ['data-i18n-content','content']].forEach(([data, attr]) => {
       document.querySelectorAll('[' + data + ']').forEach(element => element.setAttribute(attr, t(element.getAttribute(data))));
     });

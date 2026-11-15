@@ -175,3 +175,12 @@
 .site-footer .footer-bottom{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;border-top:1px solid var(--muted);margin-top:40px;padding-top:24px}
 .site-footer .footer-bottom>a{flex-shrink:0}
 @media(max-width:760px){.shared-page--01 footer.site-footer{padding:36px 0 20px}.site-footer .footer-inner{width:calc(100% - 40px)}.site-footer .footer-grid{grid-template-columns:1fr;gap:32px}.site-footer .footer-bottom{flex-direction:column;gap:20px}}
+
+/* Compact legal line and outlined social links. */
+.site-footer .footer-bottom{align-items:center;font-size:12px;gap:24px}
+.site-footer .footer-legal-line{min-width:0;overflow-wrap:normal}
+.site-footer .footer-legal-part{display:inline-block;white-space:pre}
+.site-footer .footer-socials{display:flex;gap:12px;flex-wrap:wrap}
+.site-footer .footer-socials a{color:var(--accent);min-width:44px;min-height:44px;justify-content:center}
+.site-footer .footer-socials svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:760px){.site-footer .footer-bottom{align-items:flex-start}}
