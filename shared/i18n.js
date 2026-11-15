@@ -3,6 +3,13 @@
   'use strict';
   const dictionaries = {
   "ru": {
+    "footerAddress": "Адрес клуба: ул. Сухэ-Батора, 23, 6-й микрорайон, Октябрьский район, Бишкек, 720073",
+    "footerLegal": "Юридическое лицо: ОсОО «Инженерный Колледж Лайт Академия» (проверить у колледжа)",
+    "footerPhone": "Телефон колледжа: +996 226-14-22-22",
+    "footerSite": "Сайт колледжа: college.edu.kg",
+    "footerInstagramClub": "Instagram клуба: https://www.instagram.com/enactus_ec/ (проверить ссылку)",
+    "footerCollege": "Инженерный колледж Лайт Академия",
+    "footerTodo": "Почта клуба: TODO. Юридическая строка и копирайт: TODO.",
     "titleJoin": "Enactus EC — Как присоединиться",
     "titleTeam": "Enactus EC — Команда",
     "titleAchievements": "Enactus EC — Достижения",
@@ -107,6 +114,14 @@
     "text93": "Все варианты дизайна ↗"
   },
   "en": {
+    // Подписи footer*: перевод, требует проверки клубом. Юридическое наименование сохранено из источника.
+    "footerAddress": "Club address: 23 Sukhe-Batora Street, 6th Microdistrict, Oktyabrsky District, Bishkek, 720073",
+    "footerLegal": "Legal entity: ОсОО «Инженерный Колледж Лайт Академия» (confirm with the college)",
+    "footerPhone": "College phone: +996 226-14-22-22",
+    "footerSite": "College website: college.edu.kg",
+    "footerInstagramClub": "Club Instagram: https://www.instagram.com/enactus_ec/ (verify the link)",
+    "footerCollege": "Light Academy Engineering College",
+    "footerTodo": "Club email: TODO. Legal notice and copyright: TODO.",
     "titleJoin": "Enactus EC — How to join",
     "titleTeam": "Enactus EC — Team",
     "titleAchievements": "Enactus EC — Achievements",
