@@ -155,3 +155,23 @@
 /* Full-width header background with the section content grid. */
 @media(min-width:1101px){.shared-page--01 header{padding-inline:max(4%,calc((100% - 1360px)/2))}}
 @media(max-width:1100px){.shared-page--01 header{padding-inline:20px}}
+
+/* Shared footer: existing palette and type tokens only. */
+.shared-page--01 footer.site-footer{display:block;width:100%;margin:0;padding:48px 0 24px;background:var(--chrome);color:var(--ink);border-top:1px solid var(--muted);font:16px/1.6 var(--body)}
+.site-footer .footer-inner{width:min(1360px,92%);margin-inline:auto}
+.site-footer .footer-grid{display:grid;grid-template-columns:1.4fr .8fr 1fr;gap:48px}
+.site-footer .footer-grid>*{min-width:0}
+.site-footer h2{font:700 26px/1.25 var(--heading);color:var(--ink);letter-spacing:0;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:8px;margin:0 0 24px}
+.site-footer p,.site-footer a{overflow-wrap:anywhere}
+.site-footer .footer-muted,.site-footer .todo{color:var(--muted)}
+.site-footer .todo{border-color:var(--muted)}
+.site-footer .footer-links{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.site-footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);padding-block:8px}
+.site-footer a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.shared-page--01 .site-footer a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.site-footer .footer-navigation{display:grid;gap:32px;align-content:start}
+.site-footer .footer-instagram{justify-content:center;min-width:44px}
+.site-footer .footer-instagram svg{fill:none;stroke:currentColor;stroke-width:1.7}
+.site-footer .footer-bottom{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;border-top:1px solid var(--muted);margin-top:40px;padding-top:24px}
+.site-footer .footer-bottom>a{flex-shrink:0}
+@media(max-width:760px){.shared-page--01 footer.site-footer{padding:36px 0 20px}.site-footer .footer-inner{width:calc(100% - 40px)}.site-footer .footer-grid{grid-template-columns:1fr;gap:32px}.site-footer .footer-bottom{flex-direction:column;gap:20px}}

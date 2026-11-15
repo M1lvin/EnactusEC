@@ -3,6 +3,11 @@
   'use strict';
   const dictionaries = {
   "ru": {
+    "footerClubName": "Enactus EC",
+    "footerAffiliation": "Инженерный колледж Лайт Академия, Бишкек",
+    "footerSections": "Разделы",
+    "footerCollegeLabel": "Колледж",
+
     "footerAddress": "Адрес клуба: ул. Сухэ-Батора, 23, 6-й микрорайон, Октябрьский район, Бишкек, 720073",
     "footerLegal": "Юридическое лицо: ОсОО «Инженерный Колледж Лайт Академия» (проверить у колледжа)",
     "footerPhone": "Телефон колледжа: +996 226-14-22-22",
@@ -114,6 +119,11 @@
     "text93": "Все варианты дизайна ↗"
   },
   "en": {
+    "footerClubName": "Enactus EC",
+    "footerAffiliation": "Light Academy Engineering College, Bishkek",
+    "footerSections": "Sections",
+    "footerCollegeLabel": "College",
+
     // Подписи footer*: перевод, требует проверки клубом. Юридическое наименование сохранено из источника.
     "footerAddress": "Club address: 23 Sukhe-Batora Street, 6th Microdistrict, Oktyabrsky District, Bishkek, 720073",
     "footerLegal": "Legal entity: ОсОО «Инженерный Колледж Лайт Академия» (confirm with the college)",
