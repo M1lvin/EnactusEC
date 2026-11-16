@@ -157,11 +157,11 @@
 @media(max-width:1100px){.shared-page--01 header{padding-inline:20px}}
 
 /* Shared footer: existing palette and type tokens only. */
-.shared-page--01 footer.site-footer{display:block;width:100%;margin:0;padding:48px 0 24px;background:var(--chrome);color:var(--ink);border-top:1px solid var(--muted);font:16px/1.6 var(--body)}
+.shared-page--01 footer.site-footer{--footer-bg:#292c2e;display:block;width:100%;margin:0;padding:64px 0 24px;background:var(--footer-bg);color:var(--ink);border-top:1px solid var(--muted);font:16px/1.6 var(--body)}
 .site-footer .footer-inner{width:min(1360px,92%);margin-inline:auto}
 .site-footer .footer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:64px}
 .site-footer .footer-grid>*{min-width:0}
-.site-footer h2{font:700 26px/1.25 var(--heading);color:var(--ink);letter-spacing:0;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:8px;margin:0 0 24px}
+.site-footer h2{font:700 20px/1.4 var(--heading);color:var(--ink);letter-spacing:0;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:3px;margin:0 0 16px}
 .site-footer p,.site-footer a{overflow-wrap:anywhere}
 .site-footer .footer-muted,.site-footer .todo{color:var(--muted)}
 .site-footer .todo{border-color:var(--muted)}
@@ -186,9 +186,48 @@
 @media(max-width:760px){.site-footer .footer-bottom{align-items:flex-start}}
 
 /* Footer logo row and social group. */
-.site-footer .footer-top{margin-bottom:40px}
+.site-footer .footer-top{margin-bottom:72px}
 .shared-page--01 .site-footer .footer-top .brand img{width:134.2px;height:66px;object-fit:contain}
-.site-footer .footer-follow{margin-top:32px}
-.site-footer .footer-follow h3{font:700 26px/1.25 var(--heading);color:var(--ink);letter-spacing:0;margin:0 0 16px;text-decoration:none}
+.site-footer .footer-follow{margin-top:40px}
+.site-footer .footer-follow h3{font:700 20px/1.4 var(--heading);color:var(--ink);letter-spacing:0;margin:0 0 16px;text-decoration:none}
 @media(min-width:761px) and (max-width:1100px){.site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.shared-page--01 .site-footer .footer-top .brand img{width:115.5px;height:61.6px}}
+
+/* Reference-inspired spacing; content, palette and type families stay local. */
+.site-footer .footer-club h2{text-decoration:none}
+.site-footer .footer-club>p{max-width:340px;line-height:1.5}
+.site-footer .footer-club>p+p{margin-top:20px}
+.site-footer .footer-club>.todo{padding:0;border:0}
+.site-footer .footer-links{gap:0}
+.site-footer .footer-bottom{margin-top:48px;padding-top:16px}
+@media(max-width:760px){.site-footer .footer-top{margin-bottom:40px}.site-footer .footer-follow{margin-top:32px}.site-footer .footer-bottom{margin-top:36px}}
+
+/* Reference proportions: a wider club column and compact address wrapping. */
+@media(min-width:1101px){.site-footer .footer-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr)}}
+.site-footer .footer-club>[data-i18n="footerAddress"]{max-width:270px;text-wrap:pretty}
+.site-footer .footer-club>[data-i18n="footerCollegeLine"]{max-width:320px}
+.site-footer .footer-navigation{gap:40px}
+.site-footer .footer-bottom{padding-bottom:0}
+
+/* Sticky header uses the existing dark background token. */
+.shared-page--01 header{background:var(--bg)}
+
+/* Approved header logo variant; keep the footer logo unchanged. */
+.shared-page--01 header .brand img{width:147.6px;height:72.6px}
+@media(min-width:1101px){.shared-page--01 header>.brand{margin-left:76px}}
+@media(max-width:650px){.shared-page--01 header .brand img{width:127px;height:67.8px}}
+
+/* Match the sticky header logo geometry without recoloring footer lettering. */
+.shared-page--01 .site-footer .footer-top .brand img{width:147.6px;height:72.6px}
+@media(min-width:1101px){.site-footer .footer-top>.brand{margin-left:76px}}
+@media(min-width:761px) and (max-width:1100px){.site-footer .footer-top>.brand{margin-left:calc(20px - 4.347826%)}}
+@media(max-width:760px){.site-footer .footer-top>.brand{margin-left:-4px}}
+@media(max-width:650px){.shared-page--01 .site-footer .footer-top .brand img{width:127px;height:67.8px}}
+
+/* Align all footer content with its logo and normalize social icon boxes. */
+@media(min-width:1101px){.site-footer .footer-inner{padding-left:76px}}
+.site-footer .footer-top>.brand{margin-left:0}
+@media(max-width:1100px){.site-footer .footer-inner{width:calc(100% - 40px)}}
+.site-footer .footer-socials{align-items:center}
+.site-footer .footer-socials>a,.site-footer .footer-socials>span{display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;padding:0;color:var(--accent)}
+.site-footer .footer-socials svg{display:block;width:24px;height:24px;flex:none}

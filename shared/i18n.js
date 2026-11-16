@@ -3,6 +3,7 @@
   'use strict';
   const dictionaries = {
   "ru": {
+    "footerIconTelegram": "Telegram — ссылка пока не добавлена",
     "footerFollow": "Мы в соцсетях",
     "footerCollegeLine": "Инженерный колледж Лайт Академия, Бишкек",
     "footerLegalLine": "© 2026 Enactus EC · ОсОО «Инженерный Колледж Лайт Академия»",
@@ -126,6 +127,7 @@
     "text93": "Все варианты дизайна ↗"
   },
   "en": {
+    "footerIconTelegram": "Telegram — link not added yet",
     "footerFollow": "Follow us",
     "footerCollegeLine": "Light Academy Engineering College, Bishkek",
     "footerLegalLine": "© 2026 Enactus EC · ОсОО «Инженерный Колледж Лайт Академия»",
