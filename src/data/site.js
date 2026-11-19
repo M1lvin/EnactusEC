@@ -1,5 +1,6 @@
 export const site = {
   name: 'Enactus EC',
+  heroPhoto: null, // TODO: путь к фото после согласия на публикацию.
   affiliation: 'Команда Enactus Инженерного колледжа Light Academy, Бишкек',
   slogan: 'Команда людей, которых объединяет желание расти, учиться и создавать реальные изменения',
   signature: 'Бирге күчтүүбүз!',
