@@ -1,3 +1,4 @@
+import AboutPreview from '../components/AboutPreview.jsx'
 import Hero from '../components/Hero.jsx'
 import PhraseRotator from '../components/PhraseRotator.jsx'
 import { phrases } from '../data/phrases.js'
@@ -15,10 +16,7 @@ export default function HomePage() {
   return (
     <main className="ec-page">
       <Hero slogan={site.slogan} affiliation={site.affiliation} photo={site.heroPhoto} />
-      <RevealSection aria-labelledby="home-about">
-        <SectionTitle title={<span id="home-about">Вместе мы можем больше</span>} description={site.aboutText} />
-        <TodoNotice>{site.mission || 'TODO: миссия клуба в одном предложении от команды.'}</TodoNotice>
-      </RevealSection>
+      <AboutPreview text={site.aboutText} />
       <PhraseRotator phrases={phrases} />
       <RevealSection aria-labelledby="home-stats">
         <SectionTitle title={<span id="home-stats">Команда в цифрах</span>} description="Демонстрационные значения. Данные уточняются у клуба." />
