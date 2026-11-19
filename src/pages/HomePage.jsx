@@ -1,4 +1,6 @@
 import Hero from '../components/Hero.jsx'
+import PhraseRotator from '../components/PhraseRotator.jsx'
+import { phrases } from '../data/phrases.js'
 import RevealSection from '../components/RevealSection.jsx'
 import SectionTitle from '../components/SectionTitle.jsx'
 import ActionLink from '../components/ActionLink.jsx'
@@ -17,6 +19,7 @@ export default function HomePage() {
         <SectionTitle title={<span id="home-about">Вместе мы можем больше</span>} description={site.aboutText} />
         <TodoNotice>{site.mission || 'TODO: миссия клуба в одном предложении от команды.'}</TodoNotice>
       </RevealSection>
+      <PhraseRotator phrases={phrases} />
       <RevealSection aria-labelledby="home-stats">
         <SectionTitle title={<span id="home-stats">Команда в цифрах</span>} description="Демонстрационные значения. Данные уточняются у клуба." />
         <div className="ec-stats">{stats.map(stat => <AnimatedCounter key={stat.id} value={stat.value} label={stat.label} todo={stat.todo} />)}</div>
