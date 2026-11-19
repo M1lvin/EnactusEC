@@ -1,0 +1,42 @@
+:root {
+  --bg: #181a1d;
+  --surface: #202219;
+  --chrome: #2f3744;
+  --text: #d2cfc4;
+  --muted: #9aa0a6;
+  --accent: #F0B13B;
+  --button: #8f6b00;
+  --border: #59616b;
+  --body: 'Manrope', Arial, sans-serif;
+  --heading: 'Oswald', Arial, sans-serif;
+  color-scheme: dark;
+  font: 16px/1.65 var(--body);
+}
+body:has(.ec-site) { background: var(--bg); }
+#root:has(.ec-site) { width: 100%; border: 0; text-align: left; }
+.ec-site {
+  --ec-gold: var(--accent);
+  --ec-muted: var(--muted);
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  line-height: 1.65;
+}
+.ec-site h1, .ec-site h2, .ec-site h3, .ec-site h4 { color: var(--text); }
+.ec-site h2, .ec-site h3 { font-family: var(--heading); }
+.ec-site h1 { font-family: var(--body); }
+.ec-site button, .ec-site select, .ec-site input, .ec-site textarea { font-family: inherit; }
+.ec-site :is(a, button, select, input, textarea, [tabindex]):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 5px;
+}
+.ec-site #content { scroll-margin-top: 110px; }
+.ec-site .ec-skip { z-index: 100; background: var(--bg); color: var(--text); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  .ec-site *, .ec-site *::before, .ec-site *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
