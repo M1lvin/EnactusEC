@@ -8,7 +8,7 @@ export const site = {
   howWeWork: null, // TODO: как клуб работает (встречи, форматы участия).
   enactusExplanation: null, // TODO: согласовать объяснение движения Enactus.
   contacts: {
-    address: 'ул. Сухэ-Батора, 23, 6-й микрорайон, Октябрьский район, Бишкек, 720073',
+    address: 'ул. Сухэ-Батора, 23, 6-й микрорайон, Октябрьский район, Бишкек, 720073', // проверить у клуба.
     phone: { label: '+996 226-14-22-22', href: 'tel:+996226142222' }, // проверить у клуба.
     website: { label: 'college.edu.kg', href: 'https://college.edu.kg/' }, // проверить у клуба.
     instagram: { label: 'enactus_ec', href: 'https://www.instagram.com/enactus_ec/' }, // проверить у клуба.

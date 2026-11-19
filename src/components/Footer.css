@@ -1,0 +1,22 @@
+.ec-site .ec-footer {
+  width: 100%; max-width: none; margin: 0;
+  background: var(--chrome); color: var(--text);
+  padding: 44px max(24px, calc((100% - 1240px) / 2));
+  display: grid; grid-template-columns: 1fr 1fr; gap: 36px 60px;
+  border-top: 1px solid var(--border); font-size: 14px;
+}
+.ec-footer-brand img { display: block; width: 170px; height: 90px; object-fit: contain; }
+.ec-footer-brand p { max-width: 460px; }
+.ec-site .ec-footer h2 { font-size: 28px; margin: 0 0 24px; }
+.ec-footer .ec-contact-links { gap: 14px; }
+.ec-footer .ec-contact-links a { text-underline-offset: 5px; overflow-wrap: anywhere; }
+.ec-footer .ec-contact-links a:hover { color: var(--accent); }
+.ec-footer .ec-contact-links small { color: var(--muted); }
+.ec-footer-bottom { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: flex-end; gap: 28px; padding-top: 24px; border-top: 1px solid var(--border); }
+.ec-footer .ec-todo { color: var(--muted); border-color: var(--accent); }
+.ec-back-top { flex-shrink: 0; padding: 12px 20px; border: 1px solid var(--muted); border-radius: 8px; color: var(--text); background: transparent; font: inherit; cursor: pointer; }
+.ec-back-top:hover { color: var(--accent); border-color: var(--accent); }
+@media (max-width: 650px) {
+  .ec-site .ec-footer { grid-template-columns: 1fr; padding: 32px 24px; gap: 32px; }
+  .ec-footer-bottom { flex-direction: column; align-items: flex-start; }
+}
