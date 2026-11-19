@@ -3,7 +3,6 @@ import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import { navigation } from '../data/navigation.js'
 import { site } from '../data/site.js'
-import './components.css'
 
 export default function Layout() {
   return (

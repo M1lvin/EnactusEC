@@ -1,3 +1,6 @@
+.ec-footer p { margin-top: 12px; }
+.ec-contact-links { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.ec-contact-links small { color: var(--muted); }
 .ec-site .ec-footer {
   width: 100%; max-width: none; margin: 0;
   background: var(--chrome); color: var(--text);
