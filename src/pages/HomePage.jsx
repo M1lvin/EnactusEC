@@ -1,4 +1,5 @@
 import AboutPreview from '../components/AboutPreview.jsx'
+import HomeContacts from '../components/HomeContacts.jsx'
 import Hero from '../components/Hero.jsx'
 import PhraseRotator from '../components/PhraseRotator.jsx'
 import { phrases } from '../data/phrases.js'
@@ -33,6 +34,7 @@ export default function HomePage() {
           <article className="ec-highlight" key={item.id}><h3>{item.title}</h3><p>{item.description}</p><TodoNotice>{item.todo}</TodoNotice></article>
         ))}</div>
       </RevealSection>
+      <HomeContacts contacts={site.contacts} />
     </main>
   )
 }

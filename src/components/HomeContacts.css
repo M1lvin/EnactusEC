@@ -1,0 +1,4 @@
+.ec-home-contacts { display: flex; flex-wrap: wrap; gap: 24px 48px; }
+.ec-home-contacts a { color: var(--text); text-decoration: underline; text-underline-offset: 6px; overflow-wrap: anywhere; }
+.ec-home-contacts a:hover { color: var(--accent); }
+@media (max-width: 650px) { .ec-home-contacts { flex-direction: column; align-items: flex-start; gap: 24px; } }
