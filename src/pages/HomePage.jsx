@@ -20,7 +20,7 @@ export default function HomePage() {
       <AboutPreview text={site.aboutText} />
       <PhraseRotator phrases={phrases} />
       <RevealSection aria-labelledby="home-stats">
-        <SectionTitle title={<span id="home-stats">Команда в цифрах</span>} description="Демонстрационные значения. Данные уточняются у клуба." />
+        <SectionTitle title={<span id="home-stats">В цифрах</span>} description="Демонстрационные значения. Данные уточняются у клуба." />
         <div className="ec-stats">{stats.map(stat => <AnimatedCounter key={stat.id} value={stat.value} label={stat.label} todo={stat.todo} />)}</div>
       </RevealSection>
       <RevealSection aria-labelledby="home-projects">
