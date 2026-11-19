@@ -7,9 +7,9 @@ import './components.css'
 
 export default function Layout() {
   return (
-    <div className="ec-site">
+    <div className="ec-site" id="page-top" tabIndex={-1}>
       <a className="ec-skip" href="#content">К содержимому</a>
-      <Header links={navigation} clubName={site.name} />
+      <Header links={navigation} clubName={site.name} description={site.aboutText} />
       <div id="content" tabIndex={-1}><Outlet /></div>
       <Footer clubName={site.name} contacts={site.contacts} />
     </div>

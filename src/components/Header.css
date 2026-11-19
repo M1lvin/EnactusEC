@@ -1,0 +1,57 @@
+.ec-site .ec-header {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap;
+  min-height: 76px; gap: 18px; padding: 7px 4%;
+  background: var(--chrome); color: var(--text); border-bottom: 1px solid var(--border);
+}
+.ec-header .ec-brand { display: inline-flex; flex-shrink: 0; }
+.ec-header .ec-brand img { display: block; width: 122px; height: 60px; object-fit: contain; }
+.ec-site .ec-header nav { display: flex; align-items: center; flex-wrap: nowrap; gap: 14px; width: auto; font-size: 14px; }
+.ec-header .nav-expand { min-width: 0; }
+.ec-header .nav-item { display: flex; align-items: center; gap: 2px; }
+.ec-site .ec-header nav a { border: 0; text-decoration: none; }
+.ec-site .ec-header .nav-primary { display: block; padding: 12px 0; white-space: nowrap; font-weight: 600; }
+.ec-header .nav-disclosure { display: grid; place-items: center; width: 26px; height: 40px; padding: 4px; border: 0; background: transparent; color: var(--accent); cursor: pointer; }
+.ec-header .nav-disclosure svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; transition: transform .2s; }
+.ec-header .nav-disclosure[aria-expanded="true"] svg { transform: rotate(180deg); }
+.ec-header .nav-panel { position: absolute; left: 0; right: 0; top: 100%; background: var(--bg); border-block: 1px solid var(--border); box-shadow: 0 18px 30px #181a1d66; }
+.ec-header .nav-panel[hidden] { display: none; }
+.ec-header .nav-panel-inner { width: min(1180px, 88%); margin: auto; padding: 28px 0 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 60px; }
+.ec-site .ec-header .nav-panel h2 { font: 700 19px/1.3 var(--body); color: var(--text); border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin: 0; }
+.ec-header .nav-panel-links { grid-column: 1; }
+.ec-site .ec-header .nav-panel-links a { display: flex; justify-content: space-between; gap: 20px; padding: 12px 0; font-size: 16px; }
+.ec-header .nav-panel-links span { color: var(--accent); }
+.ec-header .nav-panel p { grid-column: 2; grid-row: 1 / 3; align-self: center; max-width: 460px; color: var(--muted); margin: 0; font-size: 14px; }
+.ec-site .ec-header nav a:hover, .ec-site .ec-header nav a[aria-current="page"] { color: var(--accent); }
+.ec-header-actions { display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
+.ec-language { font-size: 13px; color: var(--accent); }
+.ec-header .ec-join { display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--button); border-radius: 8px; background: var(--button); color: var(--text); padding: 12px 16px; text-decoration: none; font-size: 14px; font-weight: 600; }
+.ec-site .ec-header .ec-menu { display: none; color: var(--text); background: transparent; border: 1px solid var(--muted); }
+.ec-header .ec-menu-icon { width: 18px; display: grid; gap: 4px; }
+.ec-menu-icon span { display: block; height: 2px; background: currentColor; }
+@media (max-width: 1250px) and (min-width: 1101px) {
+  .ec-site .ec-header { gap: 10px; padding-inline: 20px; }
+  .ec-site .ec-header nav { gap: 8px; font-size: 13px; }
+  .ec-header .nav-disclosure { width: 22px; }
+  .ec-header-actions { gap: 10px; }
+}
+@media (max-width: 1100px) {
+  .ec-site .ec-header { flex-wrap: wrap; gap: 12px; padding: 7px 24px; }
+  .ec-site .ec-header .ec-menu { display: inline-flex; align-items: center; gap: 8px; margin-left: auto; padding: 10px; }
+  .ec-header-actions { gap: 10px; }
+  .ec-site .ec-header nav { order: 4; display: none; width: 100%; flex-direction: column; align-items: stretch; gap: 0; max-height: calc(100svh - 90px); overflow-y: auto; }
+  .ec-site .ec-header.open nav { display: flex; }
+  .ec-header .nav-item { justify-content: space-between; border-bottom: 1px solid var(--border); }
+  .ec-site .ec-header .nav-primary { flex: 1; padding: 16px 0; font-size: 16px; }
+  .ec-header .nav-disclosure { width: 44px; height: 46px; }
+  .ec-header .nav-panel { position: static; box-shadow: none; border-top: 0; }
+  .ec-header .nav-panel-inner { width: 100%; padding: 20px; grid-template-columns: 1fr; gap: 12px; }
+  .ec-header .nav-panel p { grid-column: 1; grid-row: auto; font-size: 13px; }
+}
+@media (max-width: 650px) {
+  .ec-site .ec-header { padding: 5px 16px; gap: 8px; min-height: 68px; }
+  .ec-header .ec-brand img { width: 90px; height: 52px; }
+  .ec-header .ec-menu-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .ec-header .ec-join { font-size: 12px; padding: 10px 9px; }
+  .ec-header-actions { gap: 8px; }
+}
