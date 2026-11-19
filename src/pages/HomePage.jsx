@@ -25,7 +25,7 @@ export default function HomePage() {
       </RevealSection>
       <RevealSection aria-labelledby="home-projects">
         <SectionTitle title={<span id="home-projects">Наши проекты</span>} />
-        <div className="ec-grid">{projects.map(project => <ProjectCard key={project.id} project={project} />)}</div>
+        <div className="ec-grid ec-projects-grid">{projects.map(project => <ProjectCard key={project.id} project={project} />)}</div>
         <div className="ec-actions"><ActionLink to="/projects">Все проекты</ActionLink></div>
       </RevealSection>
       <RevealSection aria-labelledby="home-highlights">

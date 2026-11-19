@@ -25,7 +25,7 @@ export default function ProjectsPage() {
         <RevealSection aria-labelledby="filtered-projects">
           <SectionTitle title={<span id="filtered-projects">{selectedDirection.label}</span>} />
           {filteredProjects.length
-            ? <div className="ec-grid">{filteredProjects.map(project => <ProjectCard key={project.id} project={project} />)}</div>
+            ? <div className="ec-grid ec-projects-grid">{filteredProjects.map(project => <ProjectCard key={project.id} project={project} />)}</div>
             : <EmptyState title="Проекты пока не добавлены" description="Направления проектов уточняются. Проекты без направления доступны ниже." />}
         </RevealSection>
       )}
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
         <SectionTitle title={<span id="all-projects">Все проекты</span>}
           description={direction === 'all' ? undefined : 'Проекты, направление которых ещё уточняется.'} />
         {visibleProjects.length
-          ? <div className="ec-grid">{visibleProjects.map(project => <ProjectCard key={project.id} project={project} />)}</div>
+          ? <div className="ec-grid ec-projects-grid">{visibleProjects.map(project => <ProjectCard key={project.id} project={project} />)}</div>
           : <EmptyState title="Проектов без направления нет" description="Выберите все направления, чтобы увидеть полный список." />}
       </RevealSection>
     </main>

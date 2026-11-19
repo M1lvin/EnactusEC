@@ -1,11 +1,12 @@
 import ActionLink from './ActionLink.jsx'
+import './ProjectCard.css'
 
 export default function ProjectCard({ project }) {
   return (
     <article className="ec-project-card">
       {project.image
         ? <img className="ec-project-image" src={project.image} alt={project.name} loading="lazy" />
-        : <div className="ec-photo-placeholder">Фото скоро</div>}
+        : <div className="ec-project-cover"><b aria-hidden="true">{project.name}</b><span>Фото скоро</span><i aria-hidden="true" /></div>}
       <div className="ec-card-copy">
         <h3>{project.name}</h3>
         <p className="ec-meta">{project.exhibition}</p>
