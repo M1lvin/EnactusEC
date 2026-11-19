@@ -1,0 +1,20 @@
+.ec-home-hero { display: grid; grid-template-columns: 1.4fr 1fr; align-items: center; gap: 35px; min-height: 680px; padding: 80px 0 60px; border-bottom: 8px solid var(--accent); overflow: hidden; }
+.ec-home-hero-copy { position: relative; z-index: 1; min-width: 0; }
+.ec-site .ec-home-hero h1 { font: 700 clamp(72px, 8vw, 128px)/1.06 var(--heading); letter-spacing: -.04em; margin: 0 0 32px; }
+.ec-home-hero h1 span { color: var(--accent); }
+.ec-home-hero-slogan { max-width: 650px; font: 400 clamp(19px, 2vw, 26px)/1.65 var(--body); margin-bottom: 32px; }
+.ec-home-hero .ec-action { background: var(--button); color: var(--text) !important; }
+.ec-home-hero-art { height: 420px; position: relative; display: grid; place-items: center; isolation: isolate; }
+.ec-home-hero-art img { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+.ec-hero-rectangle { position: absolute; width: 78%; aspect-ratio: 1; border: 1px solid var(--border); }
+.ec-hero-rectangle-back { transform: rotate(-20deg); background: var(--chrome); }
+.ec-hero-rectangle-front { width: 65%; transform: rotate(20deg); background: var(--surface); border-color: var(--accent); }
+.ec-hero-monogram { font: 700 clamp(80px, 12vw, 160px)/1 var(--heading); color: var(--accent); z-index: 1; }
+.ec-home-hero-art:has(img) .ec-hero-rectangle { background: transparent; }
+.ec-home-hero-art:has(img) .ec-hero-monogram { display: none; }
+@media (min-width: 1500px) { .ec-home-hero { gap: 64px; padding-block: 100px 80px; } }
+@media (max-width: 1250px) and (min-width: 1101px) { .ec-site .ec-home-hero h1 { font-size: 92px; } .ec-home-hero-art { height: 360px; } }
+@media (max-width: 1100px) { .ec-home-hero { grid-template-columns: 1fr; min-height: 0; padding: 54px 0 40px; gap: 40px; } .ec-home-hero-art { width: min(100%, 400px); margin: auto; height: 320px; } }
+@media (max-width: 1050px) { .ec-home-hero-art { height: 280px; } }
+@media (max-width: 650px) { .ec-site .ec-home-hero h1 { font-size: clamp(54px, 15vw, 80px); } .ec-home-hero { padding-top: 40px; gap: 28px; } .ec-home-hero-art { width: min(100%, 300px); height: 240px; } .ec-home-hero-slogan { font-size: 19px; } }
+@media (prefers-reduced-motion: reduce) { .ec-home-hero *, .ec-home-hero *::before, .ec-home-hero *::after { animation: none !important; transition: none !important; } }

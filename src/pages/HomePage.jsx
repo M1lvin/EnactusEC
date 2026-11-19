@@ -1,3 +1,4 @@
+import Hero from '../components/Hero.jsx'
 import RevealSection from '../components/RevealSection.jsx'
 import SectionTitle from '../components/SectionTitle.jsx'
 import ActionLink from '../components/ActionLink.jsx'
@@ -11,13 +12,7 @@ import { stats } from '../data/stats.js'
 export default function HomePage() {
   return (
     <main className="ec-page">
-      <section className="ec-hero">
-        <p className="ec-kicker">{site.affiliation}</p>
-        <h1>{site.name}</h1>
-        <p className="ec-intro">{site.slogan}</p>
-        <div className="ec-actions"><ActionLink to="/join">Присоединиться</ActionLink><ActionLink to="/about">О нас</ActionLink></div>
-        <p className="ec-signature" lang="ky">{site.signature}</p>
-      </section>
+      <Hero slogan={site.slogan} affiliation={site.affiliation} photo={site.heroPhoto} />
       <RevealSection aria-labelledby="home-about">
         <SectionTitle title={<span id="home-about">Вместе мы можем больше</span>} description={site.aboutText} />
         <TodoNotice>{site.mission || 'TODO: миссия клуба в одном предложении от команды.'}</TodoNotice>
