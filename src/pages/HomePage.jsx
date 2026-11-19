@@ -1,8 +1,42 @@
+import RevealSection from '../components/RevealSection.jsx'
+import SectionTitle from '../components/SectionTitle.jsx'
+import ActionLink from '../components/ActionLink.jsx'
+import ProjectCard from '../components/ProjectCard.jsx'
+import AnimatedCounter from '../components/AnimatedCounter.jsx'
+import TodoNotice from '../components/TodoNotice.jsx'
+import { site } from '../data/site.js'
+import { projects } from '../data/projects.js'
+import { stats } from '../data/stats.js'
+
 export default function HomePage() {
   return (
-    <main>
-      <h1>Главная</h1>
-      <p>TODO: контент</p>
+    <main className="ec-page">
+      <section className="ec-hero">
+        <p className="ec-kicker">{site.affiliation}</p>
+        <h1>{site.name}</h1>
+        <p className="ec-intro">{site.slogan}</p>
+        <div className="ec-actions"><ActionLink to="/join">Присоединиться</ActionLink><ActionLink to="/about">О нас</ActionLink></div>
+        <p className="ec-signature" lang="ky">{site.signature}</p>
+      </section>
+      <RevealSection aria-labelledby="home-about">
+        <SectionTitle title={<span id="home-about">Вместе мы можем больше</span>} description={site.aboutText} />
+        <TodoNotice>{site.mission || 'TODO: миссия клуба в одном предложении от команды.'}</TodoNotice>
+      </RevealSection>
+      <RevealSection aria-labelledby="home-stats">
+        <SectionTitle title={<span id="home-stats">Команда в цифрах</span>} description="Демонстрационные значения. Данные уточняются у клуба." />
+        <div className="ec-stats">{stats.map(stat => <AnimatedCounter key={stat.id} value={stat.value} label={stat.label} todo={stat.todo} />)}</div>
+      </RevealSection>
+      <RevealSection aria-labelledby="home-projects">
+        <SectionTitle title={<span id="home-projects">Наши проекты</span>} />
+        <div className="ec-grid">{projects.map(project => <ProjectCard key={project.id} project={project} />)}</div>
+        <div className="ec-actions"><ActionLink to="/projects">Все проекты</ActionLink></div>
+      </RevealSection>
+      <RevealSection aria-labelledby="home-highlights">
+        <SectionTitle title={<span id="home-highlights">Достижения</span>} />
+        <div className="ec-grid">{site.highlights.map(item => (
+          <article className="ec-highlight" key={item.id}><h3>{item.title}</h3><p>{item.description}</p><TodoNotice>{item.todo}</TodoNotice></article>
+        ))}</div>
+      </RevealSection>
     </main>
   )
 }

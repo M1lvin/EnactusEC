@@ -27,6 +27,8 @@ body:has(.ec-site) { background: #111416; }
 .ec-action { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; padding: 12px 20px; color: #111416 !important; background: var(--ec-gold); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: .9rem; transition: transform .2s, background .2s; }
 .ec-action:hover { transform: translateY(-2px); background: #ffdb72; }
 .ec-section { padding: 64px 0; border-top: 1px solid #34393b; }
+.ec-reveal { transition: opacity .5s, transform .5s; }
+.ec-reveal-pending:not(:focus-within) { opacity: 0; transform: translateY(16px); }
 .ec-section-title { margin-bottom: 32px; max-width: 780px; }
 .ec-section-title p, .ec-meta { color: var(--ec-muted); font-size: .85rem; }
 .ec-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
@@ -72,5 +74,6 @@ body:has(.ec-site) { background: #111416; }
   .ec-filter { align-items: stretch; flex-direction: column; }
 }
 @media (prefers-reduced-motion: reduce) {
+  .ec-reveal-pending { opacity: 1; transform: none; }
   .ec-site *, .ec-site *::before, .ec-site *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }

@@ -1,4 +1,5 @@
-﻿import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Layout from './components/Layout.jsx'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import ProjectsPage from './pages/ProjectsPage.jsx'
@@ -13,15 +14,17 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/projects/:id" element={<ProjectPage />} />
-        <Route path="/achievements" element={<AchievementsPage />} />
-        <Route path="/team" element={<TeamPage />} />
-        <Route path="/partners" element={<PartnersPage />} />
-        <Route path="/join" element={<JoinPage />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/:id" element={<ProjectPage />} />
+          <Route path="/achievements" element={<AchievementsPage />} />
+          <Route path="/team" element={<TeamPage />} />
+          <Route path="/partners" element={<PartnersPage />} />
+          <Route path="/join" element={<JoinPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
