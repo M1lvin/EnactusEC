@@ -1,0 +1,6 @@
+.ec-achievement-year { padding-block: 48px 64px; border-top: 1px solid var(--border); }
+.ec-site .ec-achievement-year > h2 { color: var(--accent); }
+.ec-achievement-list { display: grid; gap: 24px; margin-top: 32px; }
+.ec-achievement { padding: 28px; background: var(--surface); border: 1px solid var(--border); }
+.ec-achievement-event { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+@media (max-width: 650px) { .ec-achievement { padding: 22px; } .ec-achievement-year { padding-block: 32px 48px; } }
