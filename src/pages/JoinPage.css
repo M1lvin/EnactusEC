@@ -1,0 +1,12 @@
+.ec-join-form { max-width: 760px; display: grid; gap: 28px; padding-bottom: 64px; }
+.ec-join-field { display: grid; gap: 10px; }
+.ec-join-field label { font-weight: 600; }
+.ec-join-field input, .ec-join-field textarea { width: 100%; min-width: 0; padding: 14px 16px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text); font: inherit; }
+.ec-join-field textarea { min-height: 160px; resize: vertical; }
+.ec-join-field [aria-invalid="true"] { border: 2px solid var(--accent); }
+.ec-join-hint { color: var(--muted); font-size: 14px; }
+.ec-join-error { color: var(--accent); font-size: 14px; }
+.ec-join-submit { justify-self: start; padding: 14px 24px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: var(--bg); font: 600 16px/1.4 var(--body); cursor: pointer; }
+.ec-join-success { padding-block: 80px; min-height: 45svh; }
+.ec-site .ec-join-form :is(input, textarea, button):focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+@media (max-width: 650px) { .ec-join-form { gap: 24px; padding-bottom: 44px; } .ec-join-submit { width: 100%; } }
