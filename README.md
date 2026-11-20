@@ -1,16 +1,78 @@
-# React + Vite
+# Enactus EC — сайт команды Enactus Инженерного колледжа
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Тема: Тема 6, команда Enactus Инженерного колледжа.
 
-Currently, two official plugins are available:
+Сайт: TODO — ссылка Vercel после деплоя.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Команда
 
-## React Compiler
+Madina и Master — см. историю коммитов.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Что умеет сайт
 
-## Expanding the ESLint configuration
+Страницы:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Главная.
+- О нас.
+- Проекты и отдельная страница проекта.
+- Достижения.
+- Команда.
+- Партнёры.
+- Присоединиться.
+- Страница 404.
+
+Функции:
+
+- Фильтр проектов по направлению. Проекты без подтверждённого направления остаются в разделе «Все проекты».
+- Форма вступления с проверкой обязательных полей, телефона и длины ответа.
+- Анимированные счётчики с пометкой демонстрационных значений «Данные уточняются».
+- Смена фраз с паузой и ручным переключением. Автосмена отключается при уменьшении движения.
+- Мобильное меню и раскрывающиеся панели с управлением с клавиатуры.
+
+Форма демонстрационная: после проверки показывает экран успеха. Личные данные не сохраняются и не отправляются на сервер.
+TODO: выбрать Formspree или EmailJS и подключить отправку.
+
+## Технологии
+
+React, Vite, React Router, CSS-переменные темы, ESLint.
+
+## Как запустить
+
+Установка зависимостей:
+
+```sh
+npm install
+```
+
+Запуск для разработки:
+
+```sh
+npm run dev
+```
+
+Сборка:
+
+```sh
+npm run build
+```
+
+## Данные
+
+Данные хранятся в `src/data/*.js`; заглушки помечены TODO.
+Исходные сведения для сайта — в `content.md`.
+Имена и фотографии участников публикуются только после согласия.
+Счётчики содержат демонстрационные значения, которые нужно подтвердить у клуба.
+
+## Использование AI
+
+Codex использовался для генерации и правок кода по заданным шагам; участники могут объяснить свою часть кода.
+
+## Скриншоты
+
+Будут добавлены после деплоя (компьютер + телефон).
+
+## Источники изображений
+
+Групповое фото не используется: согласие на публикацию не получено.
+Логотип из `design-variants/assets/logo-transparent.svg` скопирован в `src/media/` без изменений.
+Остальные изображения — TODO.
