@@ -5,8 +5,8 @@
 .ec-join-field textarea { min-height: 160px; resize: vertical; }
 .ec-join-field [aria-invalid="true"] { border: 2px solid var(--accent); }
 .ec-join-hint { color: var(--muted); font-size: 14px; }
-.ec-join-error { color: var(--accent); font-size: 14px; }
-.ec-join-submit { justify-self: start; padding: 14px 24px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: var(--bg); font: 600 16px/1.4 var(--body); cursor: pointer; }
+.ec-join-error { color: var(--accent-text); font-size: 14px; }
+.ec-join-submit { justify-self: start; padding: 14px 24px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: var(--on-accent); font: 600 16px/1.4 var(--body); cursor: pointer; }
 .ec-join-success { padding-block: 80px; min-height: 45svh; }
-.ec-site .ec-join-form :is(input, textarea, button):focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.ec-site .ec-join-form :is(input, textarea, button):focus-visible { outline: 3px solid var(--accent-text); outline-offset: 5px; }
 @media (max-width: 650px) { .ec-join-form { gap: 24px; padding-bottom: 44px; } .ec-join-submit { width: 100%; } }

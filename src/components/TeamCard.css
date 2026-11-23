@@ -1,4 +1,4 @@
 .ec-team-card { min-width: 0; padding: 28px; background: var(--surface); border: 1px solid var(--border); }
-.ec-site .ec-team-card h3 { color: var(--accent); }
+.ec-site .ec-team-card h3 { color: var(--accent-text); }
 .ec-team-card img { display: block; max-width: 100%; width: 100%; aspect-ratio: 4/3; object-fit: cover; margin-block: 24px; }
 @media (max-width: 650px) { .ec-team-card { padding: 22px; } }

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import NavigationPanel from './NavigationPanel.jsx'
+import ThemeToggle from './ThemeToggle.jsx'
 import logo from '../media/logo-transparent.svg'
 import './Header.css'
 
@@ -95,6 +96,7 @@ export default function Header({ links, clubName, description }) {
         ))}
       </nav>
       <div className="ec-header-actions">
+        <ThemeToggle />
         <span className="ec-language" lang="ru" aria-label="Язык сайта: русский">RU</span>
         {join && <NavLink className="ec-join" to={join.to} onClick={closeNavigation}>{join.label}</NavLink>}
       </div>

@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        let preference = 'system'
+        try {
+          const saved = localStorage.getItem('enactus-theme')
+          if (['light', 'dark', 'system'].includes(saved)) preference = saved
+        } catch { /* Системная тема доступна без хранилища. */ }
+        document.documentElement.dataset.themePreference = preference
+        document.documentElement.dataset.theme = preference === 'system'
+          ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+          : preference
+      })()
+    </script>
+    <link rel="stylesheet" href="/src/styles/theme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet" />

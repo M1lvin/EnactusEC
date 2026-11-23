@@ -11,11 +11,11 @@
 .ec-skip:focus { top: 12px; }
 .ec-page { max-width: 1240px; padding: 0 24px; margin: auto; }
 .ec-hero { padding: clamp(60px, 9vw, 120px) 0; max-width: 960px; }
-.ec-kicker { font-size: .8rem; color: var(--accent); margin-bottom: 26px; }
+.ec-kicker { font-size: .8rem; color: var(--accent-text); margin-bottom: 26px; }
 .ec-intro { font-size: clamp(1.1rem, 2.5vw, 1.5rem); max-width: 780px; color: var(--text); }
-.ec-signature { color: var(--accent); margin-top: 36px; }
+.ec-signature { color: var(--accent-text); margin-top: 36px; }
 .ec-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px; }
-.ec-action { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; padding: 12px 20px; color: var(--bg) !important; background: var(--accent); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: .9rem; transition: transform .2s, background .2s; }
+.ec-action { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; padding: 12px 20px; color: var(--on-accent) !important; background: var(--accent); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: .9rem; transition: transform .2s, background .2s; }
 .ec-action:hover { transform: translateY(-2px); background: var(--accent); }
 .ec-section { padding: 64px 0; border-top: 1px solid var(--border); }
 .ec-reveal { transition: opacity .5s, transform .5s; }
@@ -32,13 +32,13 @@
 .ec-project-details div { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: .85rem; }
 .ec-project-details dd { margin: 0; color: var(--muted); }
 .ec-feature-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; }
-.ec-badge { color: var(--accent); border: 1px solid var(--button); padding: 4px 10px; border-radius: 30px; font-size: .7rem; }
+.ec-badge { color: var(--accent-text); border: 1px solid var(--button); padding: 4px 10px; border-radius: 30px; font-size: .7rem; }
 .ec-features { margin: 24px 0; }
 .ec-features p { font-size: .85rem; }
 .ec-todo { color: var(--muted); font-size: .85rem; border-left: 2px solid var(--button); padding-left: 14px; margin-top: 18px; }
 .ec-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .ec-stat { display: flex; flex-direction: column; padding: 28px; border: 1px solid var(--border); border-radius: 12px; }
-.ec-stat-number { font-size: clamp(3rem, 6vw, 5rem); line-height: 1.2; color: var(--accent); font-variant-numeric: tabular-nums; }
+.ec-stat-number { font-size: clamp(3rem, 6vw, 5rem); line-height: 1.2; color: var(--accent-text); font-variant-numeric: tabular-nums; }
 .ec-stat small { color: var(--muted); margin-top: 14px; }
 .ec-filter { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; }
 .ec-filter label { font-size: .9rem; }
@@ -53,19 +53,44 @@
   .ec-card-copy, .ec-highlight, .ec-stat { padding: 22px; }
   .ec-filter { align-items: stretch; flex-direction: column; }
 }
-:root {
+html:root {
+  --body: 'Manrope', Arial, sans-serif;
+  --heading: 'Oswald', Arial, sans-serif;
+  font: 16px/1.65 var(--body);
+  background: var(--bg);
+  color: var(--text);
+}
+:root, :root[data-theme="dark"] {
   --bg: #181a1d;
   --surface: #202219;
   --chrome: #2f3744;
   --text: #d2cfc4;
   --muted: #9aa0a6;
-  --accent: #F0B13B;
-  --button: #8f6b00;
   --border: #59616b;
-  --body: 'Manrope', Arial, sans-serif;
-  --heading: 'Oswald', Arial, sans-serif;
+  --accent: #F0B13B;
+  --accent-text: #F0B13B;
+  --button: #8f6b00;
+  --button-text: #FFFFFF;
+  --on-accent: #181a1d;
+  --panel-shadow: #181a1d66;
+  --logo-bg: #2f3744;
   color-scheme: dark;
-  font: 16px/1.65 var(--body);
+}
+:root[data-theme="light"] {
+  --bg: #FAF8F2;
+  --surface: #FFFFFF;
+  --chrome: #F0EDE4;
+  --text: #24231F;
+  --muted: #5F5B52;
+  --border: #8A8477;
+  --accent: #F0B13B;
+  --accent-text: #805600;
+  --button: #F0B13B;
+  --button-text: #24231F;
+  --on-accent: #24231F;
+  --panel-shadow: #24231F26;
+  --logo-bg: #2f3744;
+  color-scheme: light;
 }
 body:has(.ec-site) { background: var(--bg); }
 #root:has(.ec-site) { width: 100%; border: 0; text-align: left; }
@@ -80,7 +105,7 @@ body:has(.ec-site) { background: var(--bg); }
 .ec-site h1 { font-family: var(--body); }
 .ec-site button, .ec-site select, .ec-site input, .ec-site textarea { font-family: inherit; }
 .ec-site :is(a, button, select, input, textarea, [tabindex]):focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--accent-text);
   outline-offset: 5px;
 }
 .ec-site #content { scroll-margin-top: 110px; }

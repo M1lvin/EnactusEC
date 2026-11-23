@@ -1,0 +1,4 @@
+.ec-theme-toggle { min-width: 0; }
+.ec-theme-toggle select { display: block; max-width: 100%; width: 142px; min-height: 42px; padding: 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text); font: 400 13px/1.4 var(--body); cursor: pointer; }
+@media (max-width: 1250px) and (min-width: 1101px) { .ec-theme-toggle select { width: 124px; font-size: 12px; } }
+@media (max-width: 650px) { .ec-theme-toggle select { width: 134px; } }

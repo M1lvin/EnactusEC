@@ -1,4 +1,4 @@
 .ec-about-preview { display: grid; grid-template-columns: .8fr 1.3fr; gap: 64px; }
-.ec-site .ec-about-preview h2 { color: var(--accent); }
+.ec-site .ec-about-preview h2 { color: var(--accent-text); }
 .ec-about-preview p { font-size: clamp(18px, 1.8vw, 22px); }
 @media (max-width: 1100px) { .ec-about-preview { grid-template-columns: 1fr; gap: 24px; } }

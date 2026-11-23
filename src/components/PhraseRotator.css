@@ -1,11 +1,11 @@
 .ec-phrase-rotator { background: var(--surface); padding: 36px; border-top: 2px solid var(--accent); margin-block: 36px 64px; min-width: 0; }
 .ec-phrase-heading { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
-.ec-site .ec-phrase-heading h2 { font: 600 18px/1.4 var(--body); margin: 0; color: var(--accent); }
+.ec-site .ec-phrase-heading h2 { font: 600 18px/1.4 var(--body); margin: 0; color: var(--accent-text); }
 .ec-phrases { min-height: 150px; display: grid; align-items: center; padding-block: 28px; }
 .ec-phrases blockquote { margin: 0; font: 400 clamp(22px, 2.7vw, 36px)/1.45 var(--body); overflow-wrap: anywhere; }
 .ec-phrases [hidden] { display: none; }
 .ec-phrase-rotator button { background: transparent; color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 10px 14px; font: inherit; cursor: pointer; }
-.ec-phrase-rotator button:hover { color: var(--accent); border-color: var(--accent); }
+.ec-phrase-rotator button:hover { color: var(--accent-text); border-color: var(--accent-text); }
 .ec-phrase-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; }
 .ec-phrase-controls small { color: var(--muted); max-width: 420px; }
 @media (max-width: 650px) { .ec-phrase-rotator { padding: 24px; margin-block: 28px 44px; } .ec-phrases { min-height: 190px; } }

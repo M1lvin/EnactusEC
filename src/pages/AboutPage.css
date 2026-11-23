@@ -1,6 +1,6 @@
 .ec-about-page .ec-section { padding-block: 88px; }
 .ec-about-section { display: grid; grid-template-columns: .8fr 1.3fr; gap: 64px; }
-.ec-site .ec-about-section h2 { color: var(--accent); }
+.ec-site .ec-about-section h2 { color: var(--accent-text); }
 .ec-section-number { display: block; margin-bottom: 20px; color: var(--muted); font-size: 12px; }
 .ec-about-section .ec-todo { margin-top: 0; padding-block: 16px; border-left: 0; border-bottom: 1px dashed var(--border); padding-left: 0; }
 @media (min-width: 1500px) { .ec-about-section { gap: 80px; } }
