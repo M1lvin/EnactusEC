@@ -1,0 +1,13 @@
+.ec-page-hero { position: relative; isolation: isolate; overflow: hidden; background: var(--ink); color: var(--on-ink); padding-block: 72px 80px; }
+.ec-page-hero::before, .ec-page-hero::after { content: ''; position: absolute; z-index: -1; background: var(--accent); opacity: .16; width: 320px; height: 100%; top: 0; clip-path: polygon(0 0,100% 100%,0 100%); }
+.ec-page-hero::before { left: 0; }
+.ec-page-hero::after { right: -100px; transform: rotate(180deg); }
+.ec-site .ec-page-hero h1 { color: var(--on-ink); margin-bottom: 0; }
+.ec-page-hero .ec-kicker { color: var(--accent); margin-bottom: 20px; }
+.ec-page-hero .ec-intro { color: var(--on-ink); margin-top: 24px; }
+.ec-page-hero .ec-todo { color: var(--ink-muted); max-width: 720px; }
+.ec-breadcrumb { padding-block: 24px; font-size: 14px; color: var(--muted); }
+.ec-breadcrumb a { text-decoration: none; }
+.ec-breadcrumb a:hover { text-decoration: underline; }
+.ec-page-content { padding-block: 32px var(--section-space); }
+@media(max-width:767px) { .ec-page-hero { padding-block: 48px 56px; } .ec-page-hero h1 { overflow-wrap: anywhere; } }
