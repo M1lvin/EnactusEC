@@ -4,7 +4,7 @@
   --body: Roboto, Arial, sans-serif;
   --heading: 'Roboto Condensed', Arial, sans-serif;
   --accent: #ffc222; --on-accent: #30333c; --button: var(--accent); --button-text: var(--on-accent);
-  --ink: #30333c; --on-ink: #fff; --ink-muted: #d4d7dc; --logo-bg: #30333c;
+  --ink: #30333c; --photo-overlay: #30333ce8; --on-ink: #fff; --ink-muted: #d4d7dc; --logo-bg: #30333c;
   --container: 1200px; --gutter: 24px; --section-space: 96px;
   --text-sm: 14px; --text-base: 16px; --text-lead: 22px;
   --title-xl: clamp(42px, 5vw, 72px); --title-lg: clamp(34px, 4vw, 48px); --title-md: 30px;
@@ -108,3 +108,5 @@ html { background: var(--bg); color: var(--text); font: var(--text-base)/var(--l
   .ec-site *, .ec-site *::before, .ec-site *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .ec-reveal-pending:not(:focus-within) { opacity: 1; transform: none; }
 }
+
+.ec-page-content > .ec-section:last-child { padding-bottom: 0; }

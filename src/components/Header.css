@@ -51,3 +51,6 @@
  .ec-join { font-size: 13px; padding: 9px 10px; }
  .ec-header nav { max-height: calc(100svh - 86px); }
 }
+
+.ec-mobile-join { display: none; }
+@media(max-width:600px) { .ec-header-actions > .ec-join { display: none; } .ec-header nav .ec-mobile-join { display: flex; margin: 20px 0; } }

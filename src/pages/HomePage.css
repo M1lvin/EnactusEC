@@ -5,7 +5,7 @@
 .ec-stat-number { color: var(--text); font: 900 72px/1.1 var(--heading); }
 .ec-stat-number::after { content: ''; display: block; width: 56px; height: 3px; background: var(--accent); margin: 16px auto; }
 .ec-home-projects .ec-actions { justify-content: center; }
-.ec-home-highlights { background: var(--ink); --text: var(--on-ink); --muted: var(--ink-muted); --focus: var(--accent); }
+.ec-home-highlights { color: var(--on-ink); background: var(--ink); --text: var(--on-ink); --muted: var(--ink-muted); --focus: var(--accent); }
 .ec-home-highlights .ec-highlight { background: transparent; border: 1px solid var(--ink-muted); border-top: 4px solid var(--accent); padding: 32px; border-radius: var(--radius); }
 .ec-home-highlights .ec-highlight h3 { font-size: 32px; }
 .ec-home-highlights .ec-todo { color: var(--ink-muted); }

@@ -1,2 +1,2 @@
 .ec-theme-toggle select { width: 116px; min-height: 44px; padding: 8px; border: 1px solid var(--border); border-radius: var(--radius-small); background: var(--bg); color: var(--text); font-size: 13px; }
-@media(max-width:600px) { .ec-theme-toggle select { width: 44px; padding: 8px 2px; font-size: 11px; } }
+@media(max-width:600px) { .ec-theme-toggle select { width: 116px; padding: 8px; font-size: 13px; } }

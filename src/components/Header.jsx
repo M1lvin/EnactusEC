@@ -95,6 +95,7 @@ export default function Header({ links, clubName, description }) {
             {link.children?.length > 0 && <NavigationPanel item={link} description={description} open={panel === link.id} onNavigate={closeNavigation} />}
           </div>
         ))}
+        {join && <NavLink className="ec-join ec-mobile-join" to={join.to} onClick={closeNavigation}>{join.label}</NavLink>}
       </nav>
       <div className="ec-header-actions">
         <ThemeToggle />
