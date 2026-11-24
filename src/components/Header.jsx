@@ -68,6 +68,7 @@ export default function Header({ links, clubName, description }) {
 
   return (
     <header ref={headerRef} className={`ec-header ready${open ? ' open' : ''}`}>
+      <div className="ec-header-inner">
       <NavLink className="brand ec-brand" to="/" aria-label={`${clubName} — главная`} onClick={closeNavigation}>
         <img src={logo} width="800" height="450" alt={clubName} />
       </NavLink>
@@ -97,8 +98,8 @@ export default function Header({ links, clubName, description }) {
       </nav>
       <div className="ec-header-actions">
         <ThemeToggle />
-        <span className="ec-language" lang="ru" aria-label="Язык сайта: русский">RU</span>
         {join && <NavLink className="ec-join" to={join.to} onClick={closeNavigation}>{join.label}</NavLink>}
+      </div>
       </div>
     </header>
   )
