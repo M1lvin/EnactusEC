@@ -1,3 +1,4 @@
+import PageHero from '../components/PageHero.jsx'
 import RevealSection from '../components/RevealSection.jsx'
 import { useState } from 'react'
 import SectionTitle from '../components/SectionTitle.jsx'
@@ -15,8 +16,8 @@ export default function ProjectsPage() {
   const visibleProjects = direction === 'all' ? projects : unassignedProjects
 
   return (
-    <main className="ec-page">
-      <div className="ec-hero"><h1>Проекты</h1><p className="ec-intro">EcoBrew и EasyGO</p></div>
+    <main>
+      <PageHero title="Проекты" intro="EcoBrew и EasyGO" /><div className="ec-page ec-page-content">
       <ProjectFilter options={directions} value={direction} onChange={setDirection} />
       <div aria-live="polite" aria-atomic="true" className="ec-sr-only">
         {direction === 'all' ? `Всего проектов: ${projects.length}` : `По направлению найдено: ${filteredProjects.length}. Без подтверждённого направления: ${unassignedProjects.length}`}
@@ -36,6 +37,6 @@ export default function ProjectsPage() {
           ? <div className="ec-grid ec-projects-grid">{visibleProjects.map(project => <ProjectCard key={project.id} project={project} />)}</div>
           : <EmptyState title="Проектов без направления нет" description="Выберите все направления, чтобы увидеть полный список." />}
       </RevealSection>
-    </main>
+    </div></main>
   )
 }

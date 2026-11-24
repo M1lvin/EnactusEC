@@ -10,3 +10,12 @@
 .ec-join-success { padding-block: 80px; min-height: 45svh; }
 .ec-site .ec-join-form :is(input, textarea, button):focus-visible { outline: 3px solid var(--accent-text); outline-offset: 5px; }
 @media (max-width: 650px) { .ec-join-form { gap: 24px; padding-bottom: 44px; } .ec-join-submit { width: 100%; } }
+
+.ec-join-layout { display: grid; grid-template-columns: 1.2fr .8fr; gap: 80px; align-items: start; }
+.ec-join-form { margin-top: 32px; padding-bottom: 0; }
+.ec-join-aside { max-width: 400px; justify-self: end; }
+.ec-join-error { color: var(--error); }
+.ec-join-field [aria-invalid="true"] { border-color: var(--error); }
+.ec-join-submit:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+@media(max-width:900px) { .ec-join-layout { gap: 36px; } }
+@media(max-width:767px) { .ec-join-layout { grid-template-columns: 1fr; } .ec-join-aside { justify-self: center; width: min(100%,400px); } }

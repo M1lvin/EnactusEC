@@ -6,3 +6,12 @@
 .ec-project-detail-image { max-width: 100%; width: 800px; height: auto; display: block; margin-block: 32px; }
 .ec-project-detail-section li + li { margin-top: 12px; }
 @media (max-width: 650px) { .ec-project-detail-section { padding-block: 28px 36px; } }
+
+.ec-project-media { background: var(--surface); padding: 32px; margin-bottom: 40px; border-radius: var(--radius); }
+.ec-project-media .ec-todo { margin: 0; }
+.ec-project-detail-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 24px 64px; padding-block: 40px; }
+.ec-project-detail-section .ec-todo { margin-top: 0; }
+.ec-project-detail-section > p, .ec-project-detail-section > ul { grid-column: 2; }
+.ec-project-detail-heading { grid-row: span 2; display: block; }
+.ec-project-detail-heading .ec-badge { display: inline-block; margin-top: 20px; }
+@media(max-width:767px) { .ec-project-detail-section { grid-template-columns: 1fr; gap: 16px; } .ec-project-detail-section > p,.ec-project-detail-section > ul { grid-column: 1; } .ec-project-detail-heading { grid-row: auto; } }

@@ -1,3 +1,4 @@
+import PageHero from '../components/PageHero.jsx'
 import { Link, useParams } from 'react-router-dom'
 import TodoNotice from '../components/TodoNotice.jsx'
 import { projects } from '../data/projects.js'
@@ -18,19 +19,17 @@ export default function ProjectPage() {
   const project = projects.find(item => item.id === id)
 
   if (!project) return (
-    <main className="ec-page">
-      <div className="ec-hero"><h1>Проект не найден</h1><Link className="ec-project-back" to="/projects">К списку проектов</Link></div>
+    <main><PageHero title="Проект не найден" /><div className="ec-page ec-page-content"><Link className="ec-project-back" to="/projects">К списку проектов</Link></div>
     </main>
   )
 
   const direction = directions.find(item => item.id === project.direction)
 
   return (
-    <main className="ec-page">
-      <div className="ec-hero">
-        <Link className="ec-project-back" to="/projects">Все проекты</Link>
-        <h1>{project.name}</h1>
-        {project.exhibition ? <p>{project.exhibition}</p> : <TodoNotice>TODO: выставка уточняется.</TodoNotice>}
+    <main>
+      <PageHero title={project.name} intro={project.exhibition} /><div className="ec-page ec-page-content">
+      <Link className="ec-project-back" to="/projects">Все проекты</Link>
+      <div className="ec-project-media">
         {project.image ? <img className="ec-project-detail-image" src={project.image} alt={project.name} /> : <TodoNotice>TODO: фото проекта. Скоро.</TodoNotice>}
       </div>
       <DetailSection id="project-direction" title="Направление" value={direction?.label || project.direction} todo="TODO: направление проекта уточняется у команды." />
@@ -44,6 +43,6 @@ export default function ProjectPage() {
         {project.statusNote && <p>{project.statusNote}</p>}
         {project.features?.length ? <ul>{project.features.map(feature => <li key={feature.id}>{feature.label}</li>)}</ul> : <TodoNotice>TODO: список функций уточняется у команды.</TodoNotice>}
       </section>
-    </main>
+    </div></main>
   )
 }

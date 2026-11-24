@@ -1,3 +1,4 @@
+import PageHero from '../components/PageHero.jsx'
 import TodoNotice from '../components/TodoNotice.jsx'
 import { achievements } from '../data/achievements.js'
 import './AchievementsPage.css'
@@ -6,8 +7,8 @@ export default function AchievementsPage() {
   const years = [...new Set(achievements.map(item => item.year))].sort((a, b) => (b ?? 0) - (a ?? 0))
 
   return (
-    <main className="ec-page">
-      <div className="ec-hero"><h1>Достижения</h1></div>
+    <main>
+      <PageHero title="Достижения" /><div className="ec-page ec-page-content">
       {!achievements.length && <TodoNotice>TODO: достижения уточняются у клуба.</TodoNotice>}
       {years.map(year => (
         <section className="ec-achievement-year" key={year ?? 'unknown'} aria-labelledby={`achievements-${year ?? 'unknown'}`}>
@@ -25,6 +26,6 @@ export default function AchievementsPage() {
           </div>
         </section>
       ))}
-    </main>
+    </div></main>
   )
 }

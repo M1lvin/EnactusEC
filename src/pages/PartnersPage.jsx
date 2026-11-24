@@ -1,11 +1,12 @@
+import PageHero from '../components/PageHero.jsx'
 import TodoNotice from '../components/TodoNotice.jsx'
 import { partners } from '../data/partners.js'
 import './PartnersPage.css'
 
 export default function PartnersPage() {
   return (
-    <main className="ec-page">
-      <div className="ec-hero"><h1>Партнёрам</h1></div>
+    <main>
+      <PageHero title="Партнёрам" /><div className="ec-page ec-page-content">
       <section className="ec-partners-section" aria-labelledby="partners-list">
         <h2 id="partners-list">Наши партнёры</h2>
         {partners.length ? <div className="ec-partners-grid">{partners.map(partner => (
@@ -21,6 +22,6 @@ export default function PartnersPage() {
         <h2 id="sponsorship">Как стать спонсором</h2>
         <TodoNotice>TODO: условия спонсорства уточняются у клуба.</TodoNotice>
       </section>
-    </main>
+    </div></main>
   )
 }

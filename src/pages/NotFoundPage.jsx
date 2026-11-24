@@ -1,11 +1,6 @@
-import { Link } from 'react-router-dom'
+import PageHero from '../components/PageHero.jsx'
+import ActionLink from '../components/ActionLink.jsx'
 
 export default function NotFoundPage() {
-  return (
-    <main>
-      <h1>Страница не найдена</h1>
-      <p>TODO: контент</p>
-      <Link to="/">На главную</Link>
-    </main>
-  )
+  return <main><PageHero title="Страница не найдена" intro="Ошибка 404" /><div className="ec-page ec-page-content"><p>Проверьте адрес или вернитесь на главную страницу Enactus EC.</p><div className="ec-actions"><ActionLink to="/">На главную</ActionLink></div></div></main>
 }

@@ -1,3 +1,6 @@
+import PageHero from '../components/PageHero.jsx'
+import ClubPhoto from '../components/ClubPhoto.jsx'
+import { media } from '../data/media.js'
 import { useEffect, useRef, useState } from 'react'
 import TodoNotice from '../components/TodoNotice.jsx'
 import './JoinPage.css'
@@ -60,14 +63,14 @@ export default function JoinPage() {
 
   if (submitted) return (
     <main className="ec-page ec-join-success">
-      <h1 ref={successRef} tabIndex={-1}>Спасибо, мы получили заявку</h1>
-      <TodoNotice>TODO: подключить отправку через Formspree или EmailJS. Пока это демонстрационный экран: заявка не отправлена в клуб, личные данные не сохранены.</TodoNotice>
+      <h1 ref={successRef} tabIndex={-1}>Поля успешно проверены</h1>
+      <TodoNotice>Заявка не отправлена в клуб. Это демонстрация проверки полей; личные данные не сохранены. TODO: согласовать способ передачи заявки.</TodoNotice>
     </main>
   )
 
   return (
-    <main className="ec-page">
-      <div className="ec-hero"><h1>Присоединиться</h1><TodoNotice>TODO: подключить отправку заявки. Сейчас работает только проверка полей; личные данные не сохраняются.</TodoNotice></div>
+    <main>
+      <PageHero title="Присоединиться" intro="Стать частью Enactus EC" /><div className="ec-page ec-page-content ec-join-layout"><div><h2>Начнём со знакомства</h2><TodoNotice>TODO: условия вступления уточняются у клуба. Сейчас работает только проверка полей: заявка не отправляется, личные данные не сохраняются.</TodoNotice>
       <form ref={formRef} className="ec-join-form" noValidate onSubmit={onSubmit} autoComplete="off">
         <div className="ec-join-field">
           <label htmlFor="join-name">Имя</label><input {...fieldProps('name')} type="text" />
@@ -89,8 +92,8 @@ export default function JoinPage() {
           <span className="ec-join-hint" id="motivation-hint">Не менее 20 символов. Обязательное поле.</span>
           {errors.motivation && <span className="ec-join-error" id="motivation-error">{errors.motivation}</span>}
         </div>
-        <button className="ec-join-submit" type="submit">Отправить заявку</button>
-      </form>
+        <button className="ec-join-submit" type="submit">Проверить заявку</button>
+      </form></div><aside className="ec-join-aside"><ClubPhoto photo={media.clubPoster} className="ec-photo" /><p className="ec-photo-caption">Клубный постер Enactus EC</p></aside></div>
     </main>
   )
 }
