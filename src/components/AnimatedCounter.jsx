@@ -50,7 +50,7 @@ export default function AnimatedCounter({ value, label, duration = 1400, todo = 
       <span className="ec-stat-number" aria-hidden="true">{Number.isFinite(value) ? displayValue : '—'}</span>
       <span className="ec-sr-only">{Number.isFinite(value) ? value : 'Данные отсутствуют'}</span>
       <span>{label}</span>
-      {todo && <small>Данные уточняются</small>}
+      {todo && <small>Демонстрационное значение · TODO: подтвердить</small>}
     </div>
   )
 }

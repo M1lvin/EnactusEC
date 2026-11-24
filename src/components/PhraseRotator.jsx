@@ -33,6 +33,7 @@ export default function PhraseRotator({ phrases }) {
       onPointerEnter={event => { if (event.pointerType !== 'touch') setHovered(true) }}
       onPointerLeave={() => setHovered(false)} onFocusCapture={() => setFocused(true)}
       onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false) }}>
+      <div className="ec-container">
       <div className="ec-phrase-heading">
         <h2 id="phrases-title">Слова, которые объединяют</h2>
         {!reduced && <button type="button" aria-pressed={paused} onClick={() => setPaused(value => !value)}>{paused ? 'Продолжить' : 'Пауза'}</button>}
@@ -47,6 +48,7 @@ export default function PhraseRotator({ phrases }) {
       <div className="ec-phrase-controls">
         <button type="button" onClick={() => setIndex(current => (current + 1) % phrases.length)}>Следующая фраза <span aria-hidden="true">→</span></button>
         {reduced && <small>Автосмена отключена по настройке уменьшения движения.</small>}
+      </div>
       </div>
     </section>
   )

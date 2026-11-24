@@ -18,7 +18,7 @@ export const projects = [
     name: 'EasyGO',
     exhibition: 'EXPO 2026 «Жаштар Стартаптары»',
     direction: null, // TODO: заполнить у команды.
-    description: null, // TODO: заполнить у команды.
+    description: 'Платформа, которая помогает водителям и пассажирам находить друг друга. Поездку каждый выбирает самостоятельно.',
     problem: null, // TODO: заполнить у команды.
     solution: null, // TODO: заполнить у команды.
     result: null, // TODO: заполнить у команды.

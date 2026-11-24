@@ -1,4 +1,5 @@
-.ec-home-contacts { display: flex; flex-wrap: wrap; gap: 24px 48px; }
-.ec-home-contacts a { color: var(--text); text-decoration: underline; text-underline-offset: 6px; overflow-wrap: anywhere; }
-.ec-home-contacts a:hover { color: var(--accent-text); }
-@media (max-width: 650px) { .ec-home-contacts { flex-direction: column; align-items: flex-start; gap: 24px; } }
+.ec-home-contacts { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 32px; }
+.ec-home-contacts a { padding-top: 20px; border-top: 2px solid var(--accent); font-size: 22px; font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
+.ec-home-contacts small { display: block; font-size: 14px; font-weight: 400; color: var(--muted); margin-bottom: 14px; }
+.ec-home-contacts a:hover { text-decoration: underline; }
+@media(max-width:767px) { .ec-home-contacts { grid-template-columns: 1fr; } }

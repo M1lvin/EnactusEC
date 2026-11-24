@@ -1,32 +1,14 @@
-import ActionLink from './ActionLink.jsx'
+import { Link } from 'react-router-dom'
+import TodoNotice from './TodoNotice.jsx'
 import './ProjectCard.css'
 
 export default function ProjectCard({ project }) {
-  return (
-    <article className="ec-project-card">
-      {project.image
-        ? <img className="ec-project-image" src={project.image} alt={project.name} loading="lazy" />
-        : <div className="ec-project-cover"><b aria-hidden="true">{project.name}</b><span>Фото скоро</span><i aria-hidden="true" /></div>}
-      <div className="ec-card-copy">
-        <h3>{project.name}</h3>
-        <p className="ec-meta">{project.exhibition}</p>
-        <p>{project.description || 'Описание готовится'}</p>
-        <dl className="ec-project-details">
-          <div><dt>Проблема</dt><dd>{project.problem || 'Скоро'}</dd></div>
-          <div><dt>Решение</dt><dd>{project.solution || 'Скоро'}</dd></div>
-          <div><dt>Результат</dt><dd>{project.result || 'Скоро'}</dd></div>
-        </dl>
-        {project.statusNote && (
-          <div className="ec-features">
-            <div className="ec-feature-heading"><h4>Функции</h4><span className="ec-badge">В разработке</span></div>
-            <p>{project.statusNote}</p>
-            {project.features.length
-              ? <ul>{project.features.map(feature => <li key={feature.id}>{feature.label}</li>)}</ul>
-              : <p className="ec-meta">Список функций уточняется</p>}
-          </div>
-        )}
-        <ActionLink to={`/projects/${project.id}`}>О проекте {project.name}</ActionLink>
-      </div>
-    </article>
-  )
+  return <article className="ec-project-card">
+    <div className="ec-project-cover">{project.image ? <img src={project.image} alt={project.name} loading="lazy" /> : <><b aria-hidden="true">{project.name}</b><span>TODO: фото проекта</span></>}</div>
+    <div className="ec-card-copy"><p className="ec-meta">{project.exhibition}</p><h3><Link to={`/projects/${project.id}`}>{project.name}<span aria-hidden="true">↗</span></Link></h3>
+      {project.description ? <p>{project.description}</p> : <TodoNotice>TODO: описание проекта от команды.</TodoNotice>}
+      {project.statusNote && <p className="ec-project-status"><span className="ec-badge">В разработке</span>{project.statusNote}</p>}
+      <p className="ec-card-more" aria-hidden="true">Подробнее о проекте →</p>
+    </div>
+  </article>
 }

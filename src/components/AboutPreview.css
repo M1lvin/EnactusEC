@@ -1,4 +1,12 @@
-.ec-about-preview { display: grid; grid-template-columns: .8fr 1.3fr; gap: 64px; }
-.ec-site .ec-about-preview h2 { color: var(--accent-text); }
-.ec-about-preview p { font-size: clamp(18px, 1.8vw, 22px); }
-@media (max-width: 1100px) { .ec-about-preview { grid-template-columns: 1fr; gap: 24px; } }
+.ec-about-preview { display: grid; grid-template-columns: 1.1fr 1fr; gap: 100px; align-items: center; }
+.ec-about-preview > div > p { max-width: 500px; font-size: 18px; }
+.ec-about-preview figure { margin: 0; justify-self: end; max-width: 420px; }
+.ec-about-links { display: grid; gap: 18px; margin-top: 32px; }
+.ec-about-links a { display: block; position: relative; background: var(--surface); padding: 22px 52px 22px 26px; border-radius: var(--radius); text-decoration: none; transition: background var(--transition),transform var(--transition); }
+.ec-about-links a:hover { transform: translateX(4px); background: var(--chrome); }
+.ec-site .ec-about-links h3 { font-size: 28px; margin-bottom: 10px; }
+.ec-about-links h3::after { content: ''; display: block; width: 48px; height: 2px; margin-top: 10px; background: var(--accent); }
+.ec-about-links b { position: absolute; right: 24px; top: 30px; font-size: 22px; }
+.ec-about-links span { font-size: 16px; }
+@media(max-width:1000px) { .ec-about-preview { gap: 40px; } }
+@media(max-width:767px) { .ec-about-preview { grid-template-columns: 1fr; } .ec-about-preview figure { justify-self: center; width: min(100%,420px); } }
