@@ -1,0 +1,4 @@
+.ec-club-logo { display: block; }
+.ec-club-logo .ec-club-logo-dark { display: none; }
+:root[data-theme="dark"] .ec-club-logo .ec-club-logo-light { display: none; }
+:root[data-theme="dark"] .ec-club-logo .ec-club-logo-dark { display: block; }

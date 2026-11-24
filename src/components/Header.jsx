@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import NavigationPanel from './NavigationPanel.jsx'
 import ThemeToggle from './ThemeToggle.jsx'
-import logo from '../media/logo-transparent.svg'
+import ClubLogo from './ClubLogo.jsx'
 import './Header.css'
 
 export default function Header({ links, clubName, description }) {
@@ -70,7 +70,7 @@ export default function Header({ links, clubName, description }) {
     <header ref={headerRef} className={`ec-header ready${open ? ' open' : ''}`}>
       <div className="ec-header-inner">
       <NavLink className="brand ec-brand" to="/" aria-label={`${clubName} — главная`} onClick={closeNavigation}>
-        <img src={logo} width="800" height="450" alt={clubName} />
+        <ClubLogo alt={clubName} />
       </NavLink>
       <button ref={menuRef} className="menu ec-menu" type="button" aria-controls="navigation"
         aria-expanded={open} onClick={() => { setPanel(null); setOpen(value => !value) }}>

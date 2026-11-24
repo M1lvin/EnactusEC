@@ -1,6 +1,6 @@
 .ec-header { position: sticky; top: 0; z-index: 40; background: var(--bg); box-shadow: 0 3px 12px var(--panel-shadow); }
 .ec-header-inner { max-width: 1320px; min-height: 94px; margin: auto; padding: 10px 24px; display: flex; align-items: center; gap: 30px; }
-.ec-brand { display: flex; flex-shrink: 0; text-decoration: none; background: var(--logo-bg); border-radius: 4px; }
+.ec-brand { display: flex; flex-shrink: 0; text-decoration: none; background: transparent; }
 .ec-brand img { display: block; width: 128px; height: 72px; object-fit: contain; }
 .ec-header nav { display: flex; align-items: center; gap: 22px; margin-left: auto; }
 .nav-item { display: flex; align-items: center; }

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import TodoNotice from './TodoNotice.jsx'
-import logo from '../media/logo-transparent.svg'
+import ClubLogo from './ClubLogo.jsx'
 import { navigation } from '../data/navigation.js'
 import './Footer.css'
 
@@ -11,7 +11,7 @@ export default function Footer({ clubName, contacts }) {
   }
   return <footer className="ec-footer" id="contacts">
     <div className="ec-container">
-      <div className="ec-footer-top"><Link to="/" aria-label={`${clubName} — главная`}><img src={logo} width="800" height="450" alt={clubName} /></Link><Link className="ec-action" to="/join">Присоединиться <span aria-hidden="true">↗</span></Link></div>
+      <div className="ec-footer-top"><Link to="/" aria-label={`${clubName} — главная`}><ClubLogo alt={clubName} dark /></Link><Link className="ec-action" to="/join">Присоединиться <span aria-hidden="true">↗</span></Link></div>
       <div className="ec-footer-grid">
         <div><h2>{clubName}</h2><p>{contacts.address}</p><a className="ec-social-link" href={contacts.instagram.href}>Instagram · {contacts.instagram.label} <span aria-hidden="true">↗</span></a></div>
         <nav aria-label="Навигация в подвале"><h2>О клубе</h2>{navigation.filter(link => link.id !== 'join').map(link => <Link key={link.id} to={link.to}>{link.label}</Link>)}<Link to="/team">Команда</Link></nav>
