@@ -11,10 +11,15 @@
           const saved = localStorage.getItem('enactus-theme')
           if (['light', 'dark', 'system'].includes(saved)) preference = saved
         } catch { /* Системная тема доступна без хранилища. */ }
-        document.documentElement.dataset.themePreference = preference
-        document.documentElement.dataset.theme = preference === 'system'
-          ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-          : preference
+        const systemTheme = matchMedia('(prefers-color-scheme: dark)')
+        function applyTheme() {
+          document.documentElement.dataset.themePreference = preference
+          document.documentElement.dataset.theme = preference === 'system'
+            ? (systemTheme.matches ? 'dark' : 'light')
+            : preference
+        }
+        applyTheme()
+        systemTheme.addEventListener('change', applyTheme)
       })()
     </script>
     <link rel="stylesheet" href="/src/styles/theme.css" />

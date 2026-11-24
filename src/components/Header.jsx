@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import NavigationPanel from './NavigationPanel.jsx'
-import ThemeToggle from './ThemeToggle.jsx'
 import ClubLogo from './ClubLogo.jsx'
 import './Header.css'
 
@@ -98,7 +97,7 @@ export default function Header({ links, clubName, description }) {
         {join && <NavLink className="ec-join ec-mobile-join" to={join.to} onClick={closeNavigation}>{join.label}</NavLink>}
       </nav>
       <div className="ec-header-actions">
-        <ThemeToggle />
+
         {join && <NavLink className="ec-join" to={join.to} onClick={closeNavigation}>{join.label}</NavLink>}
       </div>
       </div>
